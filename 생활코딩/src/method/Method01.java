@@ -8,7 +8,7 @@ public class Method01 {
 		printTwoTimesA();
 
 	}
-	//method ê¸°ë³¸ í˜•ì‹
+	//method ±âº» Çü½Ä
 	 public static void printTwoTimesA() {
 	        System.out.println("-");
 	        System.out.println("a");

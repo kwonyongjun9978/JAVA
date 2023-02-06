@@ -6,11 +6,11 @@ public class If03 {
 
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
-		System.out.print("aì˜ ê°’ : ");
+		System.out.print("aÀÇ °ª : ");
 		int a =scan.nextInt();
-		System.out.print("bì˜ ê°’ : ");
+		System.out.print("bÀÇ °ª : ");
 		int b =scan.nextInt();
-		System.out.print("cì˜ ê°’ : ");
+		System.out.print("cÀÇ °ª : ");
 		int c =scan.nextInt();
 		
 		/*
@@ -34,7 +34,7 @@ public class If03 {
 		}
 		*/
 
-		if(a<b && a<c) { //aê°€ ê°€ì¥ ì‘ì€ ê²½ìš°
+		if(a<b && a<c) { //a°¡ °¡Àå ÀÛÀº °æ¿ì
 			if(b<c) {
 				System.out.println(a+"  "+b+"  "+c);
 			}
@@ -42,7 +42,7 @@ public class If03 {
 				System.out.println(a+"  "+c+"  "+b);
 			}
 		}
-		else if(b<c) { //bê°€ ê°€ì¥ ì‘ì€ ê²½ìš°
+		else if(b<c) { //b°¡ °¡Àå ÀÛÀº °æ¿ì
 			if(a<c) {
 				System.out.println(b+"  "+a+"  "+c);
 			}
@@ -50,7 +50,7 @@ public class If03 {
 				System.out.println(b+"  "+c+"  "+a);
 			}
 		}
-		else { //cê°€ ê°€ì¥ ì‘ì€ ê²½ìš°
+		else { //c°¡ °¡Àå ÀÛÀº °æ¿ì
 			if(a<b) {
 				System.out.println(c+"  "+a+"  "+b);
 			}
@@ -62,18 +62,15 @@ public class If03 {
 	}
 }
 /*
-[ë¬¸ì œ] 3ê°œì˜ ìˆ«ì(a,b,c)ë¥¼ ì…ë ¥ë°›ì•„ì„œ ìˆœì„œëŒ€ë¡œ ì¶œë ¥í•˜ì‹œì˜¤ (ifë¬¸ ì‚¬ìš©í•˜ì‹œì˜¤)
-
-[ì‹¤í–‰ê²°ê³¼]
-aì˜ ê°’ : 98
-bì˜ ê°’ : 90
-cì˜ ê°’ : 85
-
+[¹®Á¦] 3°³ÀÇ ¼ıÀÚ(a,b,c)¸¦ ÀÔ·Â¹Ş¾Æ¼­ ¼ø¼­´ë·Î Ãâ·ÂÇÏ½Ã¿À (if¹® »ç¿ëÇÏ½Ã¿À)
+[½ÇÇà°á°ú]
+aÀÇ °ª : 98
+bÀÇ °ª : 90
+cÀÇ °ª : 85
 85 90 98
 ---------------------
-aì˜ ê°’ : 75
-bì˜ ê°’ : 25
-cì˜ ê°’ : 36
-
+aÀÇ °ª : 75
+bÀÇ °ª : 25
+cÀÇ °ª : 36
 25 36 75 
 */

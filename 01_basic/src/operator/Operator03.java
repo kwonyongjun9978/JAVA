@@ -3,15 +3,15 @@ package operator;
 public class Operator03 {
 
 	public static void main(String[] args) {
-		//ë‹¨í•­ì—°ì‚°ì
-		//1.ëŒ€ì…ì—°ì‚°ì
+		//´ÜÇ×¿¬»êÀÚ
+		//1.´ëÀÔ¿¬»êÀÚ
 		int a=5;
 		a+=2;;//a=a+2;
 		a*=3;
 		a/=5;
 		System.out.println("a = "+a);
 		
-		//2.ì¦ê°ì—°ì‚°ì
+		//2.Áõ°¨¿¬»êÀÚ
 		a++;
 		System.out.println("a = "+a);
 		

@@ -8,7 +8,7 @@ public class Switch01 {
 		Scanner scan = new Scanner(System.in);
 		int days;
 		
-		System.out.println("ì›” ì…ë ¥ : ");
+		System.out.println("¿ù ÀÔ·Â : ");
 		int month = scan.nextInt();
 		
 		switch(month) {
@@ -19,15 +19,15 @@ public class Switch01 {
 		case 7 : days=31; 
 		case 8 : days=31; 
 		case 10 : days=31; 
-		case 12 : days=31; break; //switchë¥¼ ë²—ì–´ë‚˜ë¼
+		case 12 : days=31; break; //switch¸¦ ¹ş¾î³ª¶ó
 		case 4 : days=30; 
 		case 6 : days=30; 
 		case 9 : days=30;
 		case 11 : days=30; break;
-		default : days=0; //days ë¥¼ ì´ˆê¸°í™”ë¥¼ ì•ˆì‹œì¼°ê¸° ë•Œë¬¸ì—(garbageê°’ ë°©ì§€)
+		default : days=0; //days ¸¦ ÃÊ±âÈ­¸¦ ¾È½ÃÄ×±â ¶§¹®¿¡(garbage°ª ¹æÁö)
 		}
 		
-		System.out.println(month + "ì›”ì€" + days + "ì¼ ì…ë‹ˆë‹¤");
+		System.out.println(month + "¿ùÀº" + days + "ÀÏ ÀÔ´Ï´Ù");
 		
 		
 	}

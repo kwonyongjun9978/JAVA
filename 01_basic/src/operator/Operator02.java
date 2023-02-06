@@ -7,14 +7,14 @@ public class Operator02 {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 		
-		System.out.print("ì •ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš” : ");
+		System.out.print("Á¤¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä : ");
 		int num = scan.nextInt();
 		
-		String result = num%2==0 ? "ì§ìˆ˜" : "í™€ìˆ˜";
+		String result = num%2==0 ? "Â¦¼ö" : "È¦¼ö";
 		System.out.println(result);
 		
-		//numì„ 2ë¡œ ë‚˜ëˆ„ë©´ ë‚˜ë¨¸ì§€ê°€ 0 ì´ê³ , 3ìœ¼ë¡œ ë‚˜ëˆ„ì–´ë„ ë‚˜ë¨¸ì§€ 0
-		String result01 = num%2==0 && num%3==0 ? "ê³µë°°ìˆ˜ì´ë‹¤" : "ê³µë°°ìˆ˜ ì•„ë‹ˆë‹¤";
+		//numÀ» 2·Î ³ª´©¸é ³ª¸ÓÁö°¡ 0 ÀÌ°í, 3À¸·Î ³ª´©¾îµµ ³ª¸ÓÁö 0
+		String result01 = num%2==0 && num%3==0 ? "°ø¹è¼öÀÌ´Ù" : "°ø¹è¼ö ¾Æ´Ï´Ù";
 		System.out.println(result01);
 
 	}

@@ -2,9 +2,9 @@ package class_;
 class Kwon {
 	public String delimiter = "";
 	
-	//생성자 method
+	//������ method
 	public Kwon(String delimiter){
-		this.delimiter = delimiter; //this : 클레스가 인스턴스화 되었을때 인스턴스의 변수를 가리킨다.
+		this.delimiter = delimiter; //this : Ŭ������ �ν��Ͻ�ȭ �Ǿ����� �ν��Ͻ��� ������ ����Ų��.
 	}
     public void A() {
         System.out.println(this.delimiter);
@@ -21,7 +21,7 @@ class Kwon {
 public class Class05 {
 	
 	public static void main(String[] args) {
-	Kwon p1 = new Kwon("----"); //생성자
+	Kwon p1 = new Kwon("----"); //������
 	p1.A();
 	p1.A();
 	p1.B();
@@ -41,7 +41,6 @@ public class Class05 {
 	
 
 }
-//인스턴스 생성시부터 초기에 주입해야할값이 있어야할때 =>생성자메소드
-//생성자메소드: 인스턴스명(or클래스명) 과 이름이 같은 메소드
-//this. : 인스턴스 변수를 가리키는 특수한 단어
-
+//�ν��Ͻ� �����ú��� �ʱ⿡ �����ؾ��Ұ��� �־���Ҷ� =>�����ڸ޼ҵ�
+//�����ڸ޼ҵ�: �ν��Ͻ���(orŬ������) �� �̸��� ���� �޼ҵ�
+//this. : �ν��Ͻ� ������ ����Ű�� Ư���� �ܾ�

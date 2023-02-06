@@ -7,11 +7,11 @@ public class If01 {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 		
-		System.out.print("ìˆ«ìž ìž…ë ¥ : ");
+		System.out.print("¼ýÀÚ ÀÔ·Â : ");
 		int a =scan.nextInt();
 		
-		if(a>=50) System.out.println(a + "ëŠ” 50ë³´ë‹¤ í¬ê±°ë‚˜ ê°™ë‹¤");
-		System.out.println(a + "ëŠ” 50ë³´ë‹¤ ìž‘ë‹¤");
+		if(a>=50) System.out.println(a + "´Â 50º¸´Ù Å©°Å³ª °°´Ù");
+		System.out.println(a + "´Â 50º¸´Ù ÀÛ´Ù");
 		System.out.println();
 		
 		if(true)
@@ -33,11 +33,11 @@ public class If01 {
 		System.out.println();
 		
 		if(a>='A' && a<='Z') //65~90
-			System.out.println((char)a+"ëŠ” ëŒ€ë¬¸ìž");
+			System.out.println((char)a+"´Â ´ë¹®ÀÚ");
 		else if(a>='a' && a<='z') //97~122
-			System.out.println((char)a+"ëŠ” ì†Œë¬¸ìž");
+			System.out.println((char)a+"´Â ¼Ò¹®ÀÚ");
 		else
-			System.out.println((char)a+"ëŠ” ìˆ«ìžì´ê±°ë‚˜ íŠ¹ìˆ˜ë¬¸ìž");
+			System.out.println((char)a+"´Â ¼ýÀÚÀÌ°Å³ª Æ¯¼ö¹®ÀÚ");
 
 	}
 

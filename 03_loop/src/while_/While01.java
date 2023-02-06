@@ -14,7 +14,7 @@ public class While01 {
 		while(true) {
 			a++;
 			System.out.println(a+" ");
-			if(a>=10) break; //whileì„ ë²—ì–´ë‚˜ë¼
+			if(a>=10) break; //whileÀ» ¹þ¾î³ª¶ó
 		}
 
 	}

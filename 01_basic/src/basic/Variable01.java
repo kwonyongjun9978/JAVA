@@ -3,16 +3,16 @@ package basic;
 public class Variable01 {
 
 	public static void main(String[] args) {
-		//ë³€ìˆ˜(variable) : í•œê°€ì§€ íƒ€ì…ì˜ ê°’ë§Œ ì €ì¥í•  ìˆ˜ ìˆëŠ” ë©”ëª¨ë¦¬ ê³µê°„, ë³€ìˆ˜ëŠ” ì„ ì–¸ëœ ë¸”ë¡({})ë‚´ì—ì„œë§Œ ì‚¬ìš© ê°€ëŠ¥.
-		//ë³€ìˆ˜ëª… : ì²«ê¸€ìëŠ” ì˜ë¬¸ì(ì†Œë¬¸ì)
-		//DataType : ëª¨ë“  ë³€ìˆ˜ì— typeì´ ìˆìœ¼ë©°, íƒ€ì…ì— ë”°ë¼ ì €ì¥í•  ìˆ˜ ìˆëŠ” ê°’ì˜ ì¢…ë¥˜ì™€ ë²”ìœ„ê°€ ë‹¬ë¼ì§„ë‹¤.
-		//ê¸°ë³¸í˜•
-		//1.ë…¼ë¦¬í˜•(boolean, 1bit)
+		//º¯¼ö(variable) : ÇÑ°¡Áö Å¸ÀÔÀÇ °ª¸¸ ÀúÀåÇÒ ¼ö ÀÖ´Â ¸Ş¸ğ¸® °ø°£, º¯¼ö´Â ¼±¾ğµÈ ºí·Ï({})³»¿¡¼­¸¸ »ç¿ë °¡´É.
+		//º¯¼ö¸í : Ã¹±ÛÀÚ´Â ¿µ¹®ÀÚ(¼Ò¹®ÀÚ)
+		//DataType : ¸ğµç º¯¼ö¿¡ typeÀÌ ÀÖÀ¸¸ç, Å¸ÀÔ¿¡ µû¶ó ÀúÀåÇÒ ¼ö ÀÖ´Â °ªÀÇ Á¾·ù¿Í ¹üÀ§°¡ ´Ş¶óÁø´Ù.
+		//±âº»Çü
+		//1.³í¸®Çü(boolean, 1bit)
 		boolean a;
 		a = 25 > 36;
 		System.out.println("a = " + a);
 		
-		//2.ë¬¸ìí˜•
+		//2.¹®ÀÚÇü
 		//char(2byte, 16bit, 0~32767, '')  
 		char b;
 		b = 'A'; //65, 0100 0001
@@ -22,14 +22,14 @@ public class Variable01 {
 		c = 65;
 		System.out.println("c = " + c); 
 		
-		//3.ì •ìˆ˜í˜•
+		//3.Á¤¼öÇü
 		//byte(1byte, 8bit, -128 ~ +127) 
-		byte d = 0; //ì§€ì—­(local)ë³€ìˆ˜ëŠ” garbageê°’ì„ ê°€ì§€ê³  ìˆê¸°ë•Œë¬¸ì— ì´ˆê¸°í™”ë¥¼ ì‹œì¼œì•¼í•œë‹¤
+		byte d = 0; //Áö¿ª(local)º¯¼ö´Â garbage°ªÀ» °¡Áö°í ÀÖ±â¶§¹®¿¡ ÃÊ±âÈ­¸¦ ½ÃÄÑ¾ßÇÑ´Ù
 		//d = 128; //error
 		//d=127;
 		System.out.println("d = " + d);
 		
-		//int(4byte, 32bit, -21ì–µ ~ 21ì–µ, default) 
+		//int(4byte, 32bit, -21¾ï ~ 21¾ï, default) 
 		int e; 
 		e = 65; //0000 0000 0000 0000 0000 0000 0100 0001
 		System.out.println("e = " + e);
@@ -40,21 +40,21 @@ public class Variable01 {
 		
 		//long(8byte, 64bit)
 		long g;
-		g = 25L; //25Lì€ longí˜• ìƒìˆ˜
+		g = 25L; //25LÀº longÇü »ó¼ö
 		System.out.println("g = " + g); 
 		
-		//4.ì‹¤ìˆ˜í˜•
+		//4.½Ç¼öÇü
 		//float(4byte, 32bit)
 		float h;
-		//h = 43.8; //43.8ì€ doubleí˜• ìƒìˆ˜, error
-		//h = (float)43.8; //ê°•ì œí˜•ë³€í™˜
-		h = 43.8F; //43.8Fì€ floatí˜• ìƒìˆ˜	
+		//h = 43.8; //43.8Àº doubleÇü »ó¼ö, error
+		//h = (float)43.8; //°­Á¦Çüº¯È¯
+		h = 43.8F; //43.8FÀº floatÇü »ó¼ö	
 		System.out.println("h = " + h);
 		
 		//double(8byte, 64bit, default)
 		
 		
-		System.out.println(Integer.MIN_VALUE + "," + Integer.MAX_VALUE); //MAX_VALUE : ìƒìˆ˜(ì •í•´ì§„ê°’)
+		System.out.println(Integer.MIN_VALUE + "," + Integer.MAX_VALUE); //MAX_VALUE : »ó¼ö(Á¤ÇØÁø°ª)
 		System.out.println(Long.MIN_VALUE + "," + Long.MAX_VALUE);
 	}
 

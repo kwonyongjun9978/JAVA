@@ -7,7 +7,7 @@ public class For02 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		
-		System.out.print("ì›í•˜ëŠ” ë‹¨ì„ ì…ë ¥ : ");
+		System.out.print("¿øÇÏ´Â ´ÜÀ» ÀÔ·Â : ");
 		int dan = sc.nextInt();
 		
 		for(int i=1; i<=9; i++) {

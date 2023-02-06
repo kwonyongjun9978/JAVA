@@ -10,67 +10,64 @@ public class Game {
 		int won= sc.nextInt();
 		for(int i=won; i>=300;) {
 			
-		System.out.print("ê°€ìœ„(1), ë°”ìœ„(2), ë³´(3) ì¤‘ ë²ˆí˜¸ ì…ë ¥ : ");
+		System.out.print("°¡À§(1), ¹ÙÀ§(2), º¸(3) Áß ¹øÈ£ ÀÔ·Â : ");
 		int b= sc.nextInt();
 		int com = (int)(Math.random()*3)+1;
 		if(b==1) {
 			if(com==1) {
-				System.out.println("ì»´í“¨í„° : ê°€ìœ„   ë‚˜ : ê°€ìœ„");
+				System.out.println("ÄÄÇ»ÅÍ : °¡À§   ³ª : °¡À§");
 				System.out.println("You Draw!!");
 			}
 			else if(com==2) {
-				System.out.println("ì»´í“¨í„° : ë°”ìœ„   ë‚˜ : ê°€ìœ„");
+				System.out.println("ÄÄÇ»ÅÍ : ¹ÙÀ§   ³ª : °¡À§");
 				System.out.println("You Lose!!");
 			}
 			else {
-				System.out.println("ì»´í“¨í„° : ë³´   ë‚˜ : ê°€ìœ„");
+				System.out.println("ÄÄÇ»ÅÍ : º¸   ³ª : °¡À§");
 				System.out.println("You Win!!");
 			}
 		}
 		else if(b==2){
 			if(com==1) {
-				System.out.println("ì»´í“¨í„° : ê°€ìœ„   ë‚˜ : ë°”ìœ„");
+				System.out.println("ÄÄÇ»ÅÍ : °¡À§   ³ª : ¹ÙÀ§");
 				System.out.println("You Win!!");
 			}
 			else if(com==2) {
-				System.out.println("ì»´í“¨í„° : ë°”ìœ„   ë‚˜ : ë°”ìœ„");
+				System.out.println("ÄÄÇ»ÅÍ : ¹ÙÀ§   ³ª : ¹ÙÀ§");
 				System.out.println("You Draw!!");
 			}
 			else {
-				System.out.println("ì»´í“¨í„° : ë³´   ë‚˜ : ë°”ìœ„");
+				System.out.println("ÄÄÇ»ÅÍ : º¸   ³ª : ¹ÙÀ§");
 				System.out.println("You Lose!!");
 			}
 		}
 		else {
 			if(com==1) {
-				System.out.println("ì»´í“¨í„° : ê°€ìœ„   ë‚˜ : ë³´");
+				System.out.println("ÄÄÇ»ÅÍ : °¡À§   ³ª : º¸");
 				System.out.println("You Lose!!");
 			}
 			else if(com==2) {
-				System.out.println("ì»´í“¨í„° : ë°”ìœ„   ë‚˜ : ë³´");
+				System.out.println("ÄÄÇ»ÅÍ : ¹ÙÀ§   ³ª : º¸");
 				System.out.println("You Win!!");
 			}
 			else {
-				System.out.println("ì»´í“¨í„° : ë³´   ë‚˜ : ë³´");
+				System.out.println("ÄÄÇ»ÅÍ : º¸   ³ª : º¸");
 				System.out.println("You Draw!!");
 			}
 		
 	  }
 		i-=300;
 	  }
-		//switchì‚¬ìš©
+		//switch»ç¿ë
 		/* 
 		Scanner sc = new Scanner(System.in);
-
 		System.out.print("insert coin : ");
 		int coin = sc.nextInt();
 		for(;coin>300;coin-=300) {
-
-		System.out.print("ê°€ìœ„(3), ë°”ìœ„(2),ë³´(1)ì¤‘ í•˜ë‚˜ë¥¼ ì…ë ¥>");
+		System.out.print("°¡À§(3), ¹ÙÀ§(2),º¸(1)Áß ÇÏ³ª¸¦ ÀÔ·Â>");
 		int user = sc.nextInt();
 		int com = (int)(Math.random()*3+1);
 		int result = com -user;	
-
 		switch(result) {
 			case 0: System.out.println("You Draw!!");break;
 			case 2: case -1:System.out.println("You Win!!");break;
@@ -83,23 +80,19 @@ public class Game {
 	}
 }
 /*
-  [ë¬¸ì œ] ê°€ìœ„, ë°”ìœ„, ë³´ ê²Œì„
-- ê°€ìœ„(1), ë°”ìœ„(2), ë³´ìê¸°(3) ì§€ì •í•œë‹¤.
-- ì»´í“¨í„°(com)ëŠ” 1 ~ 3ê¹Œì§€ ë‚œìˆ˜ë¡œ ë‚˜ì˜¨ë‹¤
-- 1ê²Œì„ë‹¹ 300ì›ìœ¼ë¡œ í•œë‹¤.
-
-[ì‹¤í–‰ê²°ê³¼]
+  [¹®Á¦] °¡À§, ¹ÙÀ§, º¸ °ÔÀÓ
+- °¡À§(1), ¹ÙÀ§(2), º¸ÀÚ±â(3) ÁöÁ¤ÇÑ´Ù.
+- ÄÄÇ»ÅÍ(com)´Â 1 ~ 3±îÁö ³­¼ö·Î ³ª¿Â´Ù
+- 1°ÔÀÓ´ç 300¿øÀ¸·Î ÇÑ´Ù.
+[½ÇÇà°á°ú]
 insert coin : 1000
-
-ê°€ìœ„(1), ë°”ìœ„(2), ë³´(3) ì¤‘ ë²ˆí˜¸ ì…ë ¥ : 3 (user, ì‚¬ìš©ì)
-ì»´í“¨í„° : ë°”ìœ„   ë‚˜ : ë³´ìê¸°
+°¡À§(1), ¹ÙÀ§(2), º¸(3) Áß ¹øÈ£ ÀÔ·Â : 3 (user, »ç¿ëÀÚ)
+ÄÄÇ»ÅÍ : ¹ÙÀ§   ³ª : º¸ÀÚ±â
 You Win!!
-
-ê°€ìœ„(1),ë°”ìœ„(2),ë³´(3) ì¤‘ ë²ˆí˜¸ ì…ë ¥ : 1 (user)
-ì»´í“¨í„° : ê°€ìœ„   ë‚˜ : ê°€ìœ„
+°¡À§(1),¹ÙÀ§(2),º¸(3) Áß ¹øÈ£ ÀÔ·Â : 1 (user)
+ÄÄÇ»ÅÍ : °¡À§   ³ª : °¡À§
 You Draw!!
-
-ê°€ìœ„(1),ë°”ìœ„(2),ë³´(3) ì¤‘ ë²ˆí˜¸ ì…ë ¥ : 3 (user)
-ì»´í“¨í„° : ê°€ìœ„   ë‚˜ : ë³´ìê¸°
+°¡À§(1),¹ÙÀ§(2),º¸(3) Áß ¹øÈ£ ÀÔ·Â : 3 (user)
+ÄÄÇ»ÅÍ : °¡À§   ³ª : º¸ÀÚ±â
 You Lose!!
 */

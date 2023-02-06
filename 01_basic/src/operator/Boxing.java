@@ -4,28 +4,28 @@ public class Boxing {
 
 	public static void main(String[] args) {
 		int a =25;
-		double b = (double)a /3; //Casting, ê°•ì œí˜•ë³€í™˜ / ìë™í˜•ë³€í™˜ 
+		double b = (double)a /3; //Casting, °­Á¦Çüº¯È¯ / ÀÚµ¿Çüº¯È¯ 
 		System.out.println(b); 
 		
 		String c = "25";
-		//int d =(int)c; //d:ê¸°ë³¸í˜•,c:ê°ì²´í˜• / (ê¸°ë³¸í˜•)ê°ì²´í˜• /error
+		//int d =(int)c; //d:±âº»Çü,c:°´Ã¼Çü / (±âº»Çü)°´Ã¼Çü /error
 		int d = Integer.parseInt(c);
 		System.out.println(d);
 		
 		int e=5;
-		//ê°ì²´í˜•    ê¸°ë³¸í˜• 
-		Integer f=e; //JDK 5.0, AutoBoxing(ê¸°ë³¸í˜• -> ê°ì²´í˜•)
-		//Integer f = new Integer(e); //JDK 5.0ì´ì „,deprecate
+		//°´Ã¼Çü    ±âº»Çü 
+		Integer f=e; //JDK 5.0, AutoBoxing(±âº»Çü -> °´Ã¼Çü)
+		//Integer f = new Integer(e); //JDK 5.0ÀÌÀü,deprecate
 		System.out.println(f);
 		
 		Integer g =5;
-		int h=g; //JDK 5.0, unAutoBoxing(ê°ì²´í˜• -> ê¸°ë³¸í˜•)
-		//int h = g.intValue(); //JDK 5.0ì´ì „
+		int h=g; //JDK 5.0, unAutoBoxing(°´Ã¼Çü -> ±âº»Çü)
+		//int h = g.intValue(); //JDK 5.0ÀÌÀü
 		System.out.println(h);
 	
 		/*
-		ê°ì²´í˜•
-		ê¸°ë³¸í˜• -----> ê°ì²´í˜•(í´ë˜ìŠ¤í™”, Wrapper Class (í¬ì¥ì‹œí‚´))
+		°´Ã¼Çü
+		±âº»Çü -----> °´Ã¼Çü(Å¬·¡½ºÈ­, Wrapper Class (Æ÷Àå½ÃÅ´))
 		int           Integer
 		double        Double
 		 */

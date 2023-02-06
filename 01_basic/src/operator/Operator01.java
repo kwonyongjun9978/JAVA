@@ -5,11 +5,11 @@ import java.util.Scanner;
 public class Operator01 {
 
 	public static void main(String[] args) {
-		Scanner scan = new Scanner(System.in); //í‚¤ë³´ë“œë¡œë¶€í„° ìž…ë ¥ë°›ëŠ” Scanner í´ëž˜ìŠ¤ë¥¼ ìƒì„±
-		System.out.print("ì ìˆ˜ ìž…ë ¥ : ");
+		Scanner scan = new Scanner(System.in); //Å°º¸µå·ÎºÎÅÍ ÀÔ·Â¹Þ´Â Scanner Å¬·¡½º¸¦ »ý¼º
+		System.out.print("Á¡¼ö ÀÔ·Â : ");
 		int score = scan.nextInt();
 		
-		String result = score>=80 && score<=100 ? "í•©ê²©" : "ë¶ˆí•©ê²©";
+		String result = score>=80 && score<=100 ? "ÇÕ°Ý" : "ºÒÇÕ°Ý";
 		System.out.println(result);
 		
 

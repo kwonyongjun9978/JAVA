@@ -8,17 +8,17 @@ public class Operator05 {
 		System.out.println("!a = "+!a);
 		System.out.println();
 		
-		String b ="apple"; //literal ìƒì„±
+		String b ="apple"; //literal »ı¼º
 		System.out.println(b);
 		String c =new String("apple");
 		System.out.println(c);
 		
-		String result = b==c ? "ê°™ë‹¤" : "ë‹¤ë¥´ë‹¤";//ë©”ëª¨ë¦¬ì˜ ì£¼ì†Œ ë¹„êµ
+		String result = b==c ? "°°´Ù" : "´Ù¸£´Ù";//¸Ş¸ğ¸®ÀÇ ÁÖ¼Ò ºñ±³
 		System.out.println("b == c : "+ result);
-		System.out.println("b != c : "+ (b!=c ? "ì°¸" : "ê±°ì§“"));
-		String result2 = b.equals(c)? "ê°™ë‹¤" : "ë‹¤ë¥´ë‹¤"; //ë¬¸ìì—´ ë¹„êµ
+		System.out.println("b != c : "+ (b!=c ? "Âü" : "°ÅÁş"));
+		String result2 = b.equals(c)? "°°´Ù" : "´Ù¸£´Ù"; //¹®ÀÚ¿­ ºñ±³
 		System.out.println("b.equals(c) : "+result2);
-		System.out.println("!b.equals(c) : "+(!b.equals(c)? "ì°¸" : "ê±°ì§“"));
+		System.out.println("!b.equals(c) : "+(!b.equals(c)? "Âü" : "°ÅÁş"));
 			
 
 

@@ -6,15 +6,15 @@ public class For04 {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		System.out.print("xê°’ ìž…ë ¥ : ");
+		System.out.print("x°ª ÀÔ·Â : ");
 		int x = sc.nextInt();
-		System.out.print("yê°’ ìž…ë ¥ : ");
+		System.out.print("y°ª ÀÔ·Â : ");
 		int y = sc.nextInt();
 		int a=1;
 		for(int i=1; i<=y; i++) {
 			a*=x;
 		}
-		System.out.println(x+"ì˜"+y+" ìŠ¹ì€ "+a);
+		System.out.println(x+"ÀÇ"+y+" ½ÂÀº "+a);
 		
 
 	}

@@ -7,14 +7,14 @@ public class For01 {
 		for(i=1; i<=10; i++) {
 			System.out.println("Hello Java : "+ i);
 		}
-		System.out.println("íƒˆì¶œ i ="+ i);
+		System.out.println("Å»Ãâ i ="+ i);
 		System.out.println();
 		
 		//10 9 8 7 6 5 4 3 2 1
 		for(i=10; i>=1; i--) {
 			System.out.print(i+" ");
 		}
-		System.out.println("íƒˆì¶œ i ="+ i);
+		System.out.println("Å»Ãâ i ="+ i);
 		System.out.println();
 		
 		//A B C D E F G ~~~~ X Y Z
@@ -24,4 +24,3 @@ public class For01 {
 	}
 
 }
-

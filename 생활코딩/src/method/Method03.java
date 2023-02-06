@@ -11,7 +11,7 @@ public class Method03 {
 		return 1;
 		//...
 	}
-	//returnê°’ì´ ì—†ëŠ” methodë¥¼ ë§Œë“¤ë•ŒëŠ” voidë¥¼ ì‚¬ìš©
+	//return°ªÀÌ ¾ø´Â method¸¦ ¸¸µé¶§´Â void¸¦ »ç¿ë
 	public static void main(String[] args) {
 		System.out.println(a());
 		System.out.println(one());

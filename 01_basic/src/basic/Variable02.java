@@ -5,32 +5,32 @@ class Test{
 	static int b = 20;
 	static String str;
 }
-//Variable02.javaíŒŒì¼ 1ê°œë¥¼ ì»¬íŒŒì¼í•˜ë©´ classíŒŒì¼ì´ 2ê°œ ìƒê¸´ë‹¤(Test.class,Variable02.class)
+//Variable02.javaÆÄÀÏ 1°³¸¦ ÄÃÆÄÀÏÇÏ¸é classÆÄÀÏÀÌ 2°³ »ı±ä´Ù(Test.class,Variable02.class)
 
 public class Variable02 {
-	int a; //ì „ì—­ë³€ìˆ˜(í•„ë“œ, 0ê°’ìœ¼ë¡œ ì´ˆê¸°í™”ê°€ ë˜ì–´ìˆë‹¤, ë²”ìœ„ : class)
+	int a; //Àü¿ªº¯¼ö(ÇÊµå, 0°ªÀ¸·Î ÃÊ±âÈ­°¡ µÇ¾îÀÖ´Ù, ¹üÀ§ : class)
 	double b; 
-	static int c; //ì‹¤í–‰í•˜ìë§ˆì ë©”ëª¨ë¦¬ì— ì¡íŒë‹¤, ì¸ìŠ¤í„´ìŠ¤í™” í•„ìš”ì—†ìŒ
+	static int c; //½ÇÇàÇÏÀÚ¸¶ÀÚ ¸Ş¸ğ¸®¿¡ ÀâÈù´Ù, ÀÎ½ºÅÏ½ºÈ­ ÇÊ¿ä¾øÀ½
 	
 	public static void main(String[] args) {
-		//int a; //ì§€ì—­ë³€ìˆ˜(local variable, ë²”ìœ„ : ë©”ì†Œë“œ({}), í˜„ì¬ garbageê°’ì´ ë“¤ì–´ìˆë‹¤(ì´ˆê¸°í™”ê°€ ì•ˆë˜ì–´ìˆì„ì‹œ))
-		int a = 5; //ì´ˆê¸°ê°’ 5ë¥¼ í• ë‹¹í•œë‹¤(ì´ˆê¸°í™”ì‹œí‚¨ë‹¤)
-		System.out.println("ì§€ì—­ë³€ìˆ˜ a = "+a);
+		//int a; //Áö¿ªº¯¼ö(local variable, ¹üÀ§ : ¸Ş¼Òµå({}), ÇöÀç garbage°ªÀÌ µé¾îÀÖ´Ù(ÃÊ±âÈ­°¡ ¾ÈµÇ¾îÀÖÀ»½Ã))
+		int a = 5; //ÃÊ±â°ª 5¸¦ ÇÒ´çÇÑ´Ù(ÃÊ±âÈ­½ÃÅ²´Ù)
+		System.out.println("Áö¿ªº¯¼ö a = "+a);
 		
-		Variable02 v = new Variable02(); //ë©”ëª¨ë¦¬ í• ë‹¹(ìƒì„±),ê°ì²´í˜•
-		System.out.println("ê°ì²´ = "+v); //ì£¼ì†Œ(í´ë˜ìŠ¤@16ì§„ìˆ˜)
-		System.out.println("í•„ë“œ a = "+v.a); //intíƒ€ì…ì˜ ì´ˆê¸°í™” ê°’ : 0
-		System.out.println("í•„ë“œ b = "+v.b); //doubleíƒ€ì…ì˜ ì´ˆê¸°í™” ê°’ : 0.0
+		Variable02 v = new Variable02(); //¸Ş¸ğ¸® ÇÒ´ç(»ı¼º),°´Ã¼Çü
+		System.out.println("°´Ã¼ = "+v); //ÁÖ¼Ò(Å¬·¡½º@16Áø¼ö)
+		System.out.println("ÇÊµå a = "+v.a); //intÅ¸ÀÔÀÇ ÃÊ±âÈ­ °ª : 0
+		System.out.println("ÇÊµå b = "+v.b); //doubleÅ¸ÀÔÀÇ ÃÊ±âÈ­ °ª : 0.0
 		
-		System.out.println("static í•„ë“œ c = "+Variable02.c);
-		System.out.println("static í•„ë“œ c = "+c); //ìì‹ ì˜ í´ë˜ìŠ¤ ì˜ì—­ì´ë‹ˆê¹Œ ìƒëµê°€ëŠ¥
+		System.out.println("static ÇÊµå c = "+Variable02.c);
+		System.out.println("static ÇÊµå c = "+c); //ÀÚ½ÅÀÇ Å¬·¡½º ¿µ¿ªÀÌ´Ï±î »ı·«°¡´É
 		
 		
-		//Testí´ë˜ìŠ¤ì˜ ê°’ì„ ì¶œë ¥í•˜ì‹œì˜¤
+		//TestÅ¬·¡½ºÀÇ °ªÀ» Ãâ·ÂÇÏ½Ã¿À
 		Test t = new Test();
-		System.out.println("Testí´ë˜ìŠ¤ì˜ í•„ë“œ a = "+t.a);
-		System.out.println("Testí´ë˜ìŠ¤ì˜ static í•„ë“œ b = "+Test.b);
-		System.out.println("Testí´ë˜ìŠ¤ì˜ static í•„ë“œ str = "+Test.str); //String íƒ€ì…ì˜ ì´ˆê¸°í™”ê°’ : null
+		System.out.println("TestÅ¬·¡½ºÀÇ ÇÊµå a = "+t.a);
+		System.out.println("TestÅ¬·¡½ºÀÇ static ÇÊµå b = "+Test.b);
+		System.out.println("TestÅ¬·¡½ºÀÇ static ÇÊµå str = "+Test.str); //String Å¸ÀÔÀÇ ÃÊ±âÈ­°ª : null
 	}
 
 }

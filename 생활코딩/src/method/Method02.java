@@ -3,13 +3,13 @@ package method;
 public class Method02 {
 
 	public static void main(String[] args) {
-                      //ì¸ì, argument		
+                      //ÀÎÀÚ, argument		
 		printTwoTimes("a", "-");
 		printTwoTimes("a", "*");
 		printTwoTimes("a", "&");
 		printTwoTimes("b", "!");
 	}
-	//method input                   ë§¤ê°œë³€ìˆ˜,parameter   
+	//method input                   ¸Å°³º¯¼ö,parameter   
 	public static void printTwoTimes(String text, String delimiter) {
 		System.out.println(delimiter);
 		System.out.println(text);

@@ -20,13 +20,12 @@ public class AddGame {
 			break;
 		}
 		else {
-			if(j==1)System.out.println("ì‘ í‹€ë ¸ì–´~");
-			else if(j==2)System.out.println("ã…¡ã…¡ "+(a+b));
+			if(j==1)System.out.println("ÀÀ Æ²·È¾î~");
+			else if(j==2)System.out.println("¤Ñ¤Ñ "+(a+b));
 		}
 	}
 		
 	}
-	System.out.println("ë‹¹ì‹ ì€ ì´ "+c+"ë¬¸ì œë¥¼ ë§ì¶”ì–´ì„œ ì ìˆ˜"+count+"ì  ì…ë‹ˆë‹¤.");
+	System.out.println("´ç½ÅÀº ÃÑ "+c+"¹®Á¦¸¦ ¸ÂÃß¾î¼­ Á¡¼ö"+count+"Á¡ ÀÔ´Ï´Ù.");
 	}
 }
-

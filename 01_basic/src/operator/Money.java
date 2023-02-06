@@ -7,22 +7,22 @@ public class Money {
 
 	public static void main(String[] args) {
 		/*
-		[ë¬¸ì œ]
-		ë™ì „êµí™˜ê¸° - í˜„ê¸ˆ 5378ì›ì´ ìˆìŠµë‹ˆë‹¤.
-		[ì‹¤í–‰ê²°ê³¼]
-		í˜„ê¸ˆ : 5378ì›
-		ì²œì› : 5ì¥
-		ë°±ì› : 3ê°œ
-		ì‹­ì› : 7ê°œ
-		ì¼ì› : 8ê°œ
+		[¹®Á¦]
+		µ¿Àü±³È¯±â - Çö±İ 5378¿øÀÌ ÀÖ½À´Ï´Ù.
+		[½ÇÇà°á°ú]
+		Çö±İ : 5378¿ø
+		Ãµ¿ø : 5Àå
+		¹é¿ø : 3°³
+		½Ê¿ø : 7°³
+		ÀÏ¿ø : 8°³
 		*/
 	
 		int money = 5378;
 		
-		Scanner scan = new Scanner(System.in); //í‚¤ë³´ë“œë¡œë¶€í„° ì…ë ¥ë°›ëŠ” (lang packageì•ˆì˜)Scanner í´ë˜ìŠ¤ë¥¼ ìƒì„±
-											   //(lang packageì•ˆì˜)System í´ë˜ìŠ¤ì—ì„œ in ë©”ì†Œë“œ í˜¸ì¶œ
-		System.out.print("ëˆ ì…ë ¥ : ");
-		money = scan.nextInt(); //Scanner í´ë˜ìŠ¤ì—ì„œ nextIntë©”ì†Œë“œ í˜¸ì¶œ
+		Scanner scan = new Scanner(System.in); //Å°º¸µå·ÎºÎÅÍ ÀÔ·Â¹Ş´Â (lang package¾ÈÀÇ)Scanner Å¬·¡½º¸¦ »ı¼º
+											   //(lang package¾ÈÀÇ)System Å¬·¡½º¿¡¼­ in ¸Ş¼Òµå È£Ãâ
+		System.out.print("µ· ÀÔ·Â : ");
+		money = scan.nextInt(); //Scanner Å¬·¡½º¿¡¼­ nextInt¸Ş¼Òµå È£Ãâ
 		
 		int a = money/1000;
 		int b = (money%1000)/100;
@@ -31,11 +31,11 @@ public class Money {
 		
 		DecimalFormat df = new DecimalFormat();
 		
-		System.out.println("í˜„ê¸ˆ : "+df.format(money)+"ì›"); //3ìë¦¬ë§ˆë‹¤ , ì°ê¸°
-		System.out.printf("ì²œì› : %dì¥\n",a);
-		System.out.printf("ë°±ì› : %dê°œ\n",b);
-		System.out.printf("ì‹­ì› : %dê°œ\n",c);
-		System.out.printf("ì¼ì› : %dê°œ\n",d);
+		System.out.println("Çö±İ : "+df.format(money)+"¿ø"); //3ÀÚ¸®¸¶´Ù , Âï±â
+		System.out.printf("Ãµ¿ø : %dÀå\n",a);
+		System.out.printf("¹é¿ø : %d°³\n",b);
+		System.out.printf("½Ê¿ø : %d°³\n",c);
+		System.out.printf("ÀÏ¿ø : %d°³\n",d);
 	}
 
 }

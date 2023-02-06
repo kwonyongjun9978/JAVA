@@ -6,18 +6,18 @@ import java.util.Scanner;
 public class Salary {
 
 	public static void main(String[] args) {
-		Scanner scan = new Scanner(System.in); //М┌╓КЁ╢К⌠°К║°К╤─М└╟ Л·┘К═╔К╟⌡К┼■ Scanner М│╢К·≤Л┼╓К╔╪ Л┐²Л└╠
-		System.out.print("Л²╢К╕└ Л·┘К═╔ : ");
+		Scanner scan = new Scanner(System.in); //е╟╨╦╣Е╥н╨нем ют╥б╧ч╢б Scanner е╛╥║╫╨╦╕ ╩Щ╪╨
+		System.out.print("юл╦╖ ют╥б : ");
 		String na = scan.next();
-		System.out.print("Л╖│Й╦┴ Л·┘К═╔ : ");
+		System.out.print("аВ╠ч ют╥б : ");
 		String po = scan.next();
-		System.out.print("Й╦╟КЁ╦Й╦┴ Л·┘К═╔ : ");
+		System.out.print("╠Б╨╩╠ч ют╥б : ");
 		int re = scan.nextInt();
-		System.out.print("Л┬≤К▀╧ Л·┘К═╔ : ");
+		System.out.print("╪Ж╢Г ют╥б : ");
 		int al = scan.nextInt();
 		
-		int a = re+al; //М∙╘ЙЁ└
-		double b; //Л└╦Й╦┬
+		int a = re+al; //гу╟Х
+		double b; //╪╪╠щ
 		if(a>=5000000) {
 			b=a*0.03;
 		}
@@ -27,16 +27,16 @@ public class Salary {
 		else {
 			b=a*0.01;
 		}
-		double c = a - b; //Л⌡■Й╦┴
+		double c = a - b; //©Ы╠ч
 		
 		DecimalFormat df = new DecimalFormat();
 		
-		System.out.println("*** "+na+" "+po+" Л⌡■Й╦┴ ***");
-		System.out.println("Й╦╟КЁ╦Й╦┴ : "+df.format(re)+"Л⌡░");
-		System.out.println("Л┬≤К▀╧ : "+df.format(al)+"Л⌡░");
-		System.out.println("М∙╘ЙЁ└ : "+df.format(a)+"Л⌡░");
-		System.out.println("Л└╦Й╦┬ : "+df.format(b)+"Л⌡░");
-		System.out.println("Л⌡■Й╦┴ : "+df.format(c)+"Л⌡░");
+		System.out.println("*** "+na+" "+po+" ©Ы╠ч ***");
+		System.out.println("╠Б╨╩╠ч : "+df.format(re)+"©Ь");
+		System.out.println("╪Ж╢Г : "+df.format(al)+"©Ь");
+		System.out.println("гу╟Х : "+df.format(a)+"©Ь");
+		System.out.println("╪╪╠щ : "+df.format(b)+"©Ь");
+		System.out.println("©Ы╠ч : "+df.format(c)+"©Ь");
 		
 		/*
 		1234
@@ -48,29 +48,24 @@ public class Salary {
 }
 
 /*
-[К╛╦Л═°] Л⌡■Й╦┴ ЙЁ└Л┌╟ М■└К║°Й╥╦К·╗ - Л║╟Й╠╢ Л≈╟Л┌╟Л·░
-Л²╢К╕└, Л╖│Й╦┴, Й╦╟КЁ╦Й╦┴, Л┬≤К▀╧Л²└ Л·┘К═╔М∙≤Л≈╛ М∙╘ЙЁ└, Л└╦Й╦┬, Л⌡■Й╦┴Л²└ Л╤°К═╔М∙≤Л▀°Л≤╓
-К▀╗ М∙╘ЙЁ└Й╟─ 5,000,000Л⌡░ Л²╢Л┐│Л²╢К╘╢ 3%
-       3,000,000Л⌡░ Л²╢Л┐│Л²╢К╘╢ 2%
-       Л∙└К▀┬К╘╢ 1%
+[╧╝а╕] ©Ы╠ч ╟Х╩Й га╥н╠в╥╔ - а╤╟г ©╛╩Йюз
+юл╦╖, аВ╠ч, ╠Б╨╩╠ч, ╪Ж╢Гю╩ ют╥бго©╘ гу╟Х, ╪╪╠щ, ©Ы╠чю╩ цБ╥бго╫ц©ю
+╢э гу╟Х╟║ 5,000,000©Ь юл╩Сюл╦И 3%
+       3,000,000©Ь юл╩Сюл╦И 2%
+       ╬ф╢о╦И 1%
        
-М∙╘ЙЁ└ = Й╦╟КЁ╦Й╦┴ + Л┬≤К▀╧
-Л└╦Й╦┬ = М∙╘ЙЁ└ * Л└╦Л°╗
-Л⌡■Й╦┴ = М∙╘ЙЁ└ - Л└╦Й╦┬
-
-[Л▀╓М√┴Й╡╟ЙЁ╪]
-Л²╢К╕└ Л·┘К═╔ : М≥█Й╦╦К▐≥
-Л╖│Й╦┴ Л·┘К═╔ : К╤─Л·╔
-Й╦╟КЁ╦Й╦┴ Л·┘К═╔ : 4900000
-Л┬≤К▀╧ Л·┘К═╔ : 200000
-
-*** М≥█Й╦╦К▐≥ К╤─Л·╔ Л⌡■Й╦┴ ***
-Й╦╟КЁ╦Й╦┴ : 4,900,000Л⌡░
-Л┬≤К▀╧ : 200,000Л⌡░
-М∙╘ЙЁ└ : 5,100,000Л⌡░
-Л└╦Й╦┬ : 153,000Л⌡░
-Л⌡■Й╦┴ : 4,947,000Л⌡░
+гу╟Х = ╠Б╨╩╠ч + ╪Ж╢Г
+╪╪╠щ = гу╟Х * ╪╪ю╡
+©Ы╠ч = гу╟Х - ╪╪╠щ
+[╫ггЮ╟А╟З]
+юл╦╖ ют╥б : х╚╠Ф╣©
+аВ╠ч ют╥б : ╨нюЕ
+╠Б╨╩╠ч ют╥б : 4900000
+╪Ж╢Г ют╥б : 200000
+*** х╚╠Ф╣© ╨нюЕ ©Ы╠ч ***
+╠Б╨╩╠ч : 4,900,000©Ь
+╪Ж╢Г : 200,000©Ь
+гу╟Х : 5,100,000©Ь
+╪╪╠щ : 153,000©Ь
+©Ы╠ч : 4,947,000©Ь
 */
-
-
-

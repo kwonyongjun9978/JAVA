@@ -11,13 +11,13 @@ public class Array03 {
 		int[] ar;
 		int sum=0;
 		
-		System.out.print("ë°°ì—´ í¬ê¸° ì…ë ¥ : ");
+		System.out.print("¹è¿­ Å©±â ÀÔ·Â : ");
 		size = sc.nextInt();
 		
 		ar= new int[size];
 		
 		for(int i=0; i<size; i++) {
-			System.out.print("ar["+i+"] ì…ë ¥ : ");
+			System.out.print("ar["+i+"] ÀÔ·Â : ");
 			ar[i] = sc.nextInt();
 		}
 		
@@ -27,19 +27,19 @@ public class Array03 {
 			System.out.print(ar[i]+" ");
 		}
 		System.out.println();
-		System.out.println("í•© = "+sum);
+		System.out.println("ÇÕ = "+sum);
 		*/
 		
-		//ìµœëŒ€ê°’êµ¬í•˜ê¸°.
-		int max = ar[0]; //ë°°ì—´ì˜ ì²«ë²ˆì§¸ ë°ì´í„°ë¥¼ ì´ˆê¸°ê°’ìœ¼ë¡œ ê°–ëŠ”ë‹¤.
+		//ÃÖ´ë°ª±¸ÇÏ±â.
+		int max = ar[0]; //¹è¿­ÀÇ Ã¹¹øÂ° µ¥ÀÌÅÍ¸¦ ÃÊ±â°ªÀ¸·Î °®´Â´Ù.
 		for(int i=1; i<size; i++) {
 			if(ar[i]>max) {
 				max=ar[i];
 			}
 		}
 		
-		//ìµœì†Œê°’êµ¬í•˜ê¸°
-		int min = ar[0]; //ë°°ì—´ì˜ ì²«ë²ˆì§¸ ë°ì´í„°ë¥¼ ì´ˆê¸°ê°’ìœ¼ë¡œ ê°–ëŠ”ë‹¤.
+		//ÃÖ¼Ò°ª±¸ÇÏ±â
+		int min = ar[0]; //¹è¿­ÀÇ Ã¹¹øÂ° µ¥ÀÌÅÍ¸¦ ÃÊ±â°ªÀ¸·Î °®´Â´Ù.
 		for(int i=1; i<size; i++) {
 			if(ar[i]<min) {
 				min=ar[i];
@@ -51,25 +51,22 @@ public class Array03 {
 			System.out.print(data+" ");
 		}
 		System.out.println();
-		System.out.println("í•© = "+sum);
-		System.out.println("ìµœëŒ€ê°’ = "+max);
-		System.out.println("ìµœì†Œê°’ = "+min);
+		System.out.println("ÇÕ = "+sum);
+		System.out.println("ÃÖ´ë°ª = "+max);
+		System.out.println("ÃÖ¼Ò°ª = "+min);
 	}
 
 }
 /*
-[ë¬¸ì œ] ë°°ì—´ì˜ í¬ê¸°ë¥¼ ì…ë ¥ë°›ì•„ì„œ ë°°ì—´ì„ ìƒì„±í•œë‹¤.
-ë°ì´í„°ë¥¼ ì¶œë ¥í•˜ê³  í•©, ìµœëŒ€ê°’, ìµœì†Œê°’ì„ êµ¬í•˜ì‹œì˜¤.
-
-[ì‹¤í–‰ê²°ê³¼]
-ë°°ì—´ í¬ê¸° ì…ë ¥ : 3
-
-ar[0] ì…ë ¥ : 25
-ar[1] ì…ë ¥ : 13
-ar[2] ì…ë ¥ : 57
-
+[¹®Á¦] ¹è¿­ÀÇ Å©±â¸¦ ÀÔ·Â¹Ş¾Æ¼­ ¹è¿­À» »ı¼ºÇÑ´Ù.
+µ¥ÀÌÅÍ¸¦ Ãâ·ÂÇÏ°í ÇÕ, ÃÖ´ë°ª, ÃÖ¼Ò°ªÀ» ±¸ÇÏ½Ã¿À.
+[½ÇÇà°á°ú]
+¹è¿­ Å©±â ÀÔ·Â : 3
+ar[0] ÀÔ·Â : 25
+ar[1] ÀÔ·Â : 13
+ar[2] ÀÔ·Â : 57
 25 13 57
-í•© = xxx
-ìµœëŒ€ê°’ = xx
-ìµœì†Œê°’ = xx
+ÇÕ = xxx
+ÃÖ´ë°ª = xx
+ÃÖ¼Ò°ª = xx
 */

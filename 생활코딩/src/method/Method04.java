@@ -1,11 +1,11 @@
 package method;
 
 public class Method04 {
-	//method í™œìš© : ì½”ë“œì˜ ê°€ë…ì„±&ì¬ì‚¬ìš©ì„±&ìœ ì§€ë³´ìˆ˜ â†‘
-	//ê³µê¸‰ê°€ì•¡
+	//method È°¿ë : ÄÚµåÀÇ °¡µ¶¼º&Àç»ç¿ë¼º&À¯Áöº¸¼ö ¡è
+	//°ø±Ş°¡¾×
 	public static double valueOfSupply = 10000.0;
 	
-	//ë¶€ê°€ê°€ì¹˜ì„¸ìœ¨
+	//ºÎ°¡°¡Ä¡¼¼À²
 	public static double vatRate = 0.1;
 	
 	public static double getVAT() {

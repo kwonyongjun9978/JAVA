@@ -3,26 +3,26 @@ package basic;
 public class MethodTest01 {
 
 	public static void main(String[] args) {
-		//25, 36ì¤‘ í°ê°’ì„ êµ¬í•˜ì‹œì˜¤
-		//ìë°”ì˜ ê¸°ë³¸(default, ìë°”ë„ ì•Œê³  ìˆëŠ”) íŒ¨í‚¤ì§€ => java.lang
-		int big = Math.max(25, 36); //java.langíŒ¨í‚¤ì§€ì•ˆì˜ Mathí´ë˜ìŠ¤ì—ì„œ maxë¼ëŠ” ë©”ì†Œë“œë¥¼ í˜¸ì¶œí•œë‹¤
-		System.out.println("ìµœëŒ€ê°’ì€? "+big);
+		//25, 36Áß Å«°ªÀ» ±¸ÇÏ½Ã¿À
+		//ÀÚ¹ÙÀÇ ±âº»(default, ÀÚ¹Ùµµ ¾Ë°í ÀÖ´Â) ÆĞÅ°Áö => java.lang
+		int big = Math.max(25, 36); //java.langÆĞÅ°Áö¾ÈÀÇ MathÅ¬·¡½º¿¡¼­ max¶ó´Â ¸Ş¼Òµå¸¦ È£ÃâÇÑ´Ù
+		System.out.println("ÃÖ´ë°ªÀº? "+big);
 		
-		//25.8, 78.6ì¤‘ ì‘ì€ê°’ì„ êµ¬í•˜ì‹œì˜¤
+		//25.8, 78.6Áß ÀÛÀº°ªÀ» ±¸ÇÏ½Ã¿À
 		double small = Math.min(25.8,78.6);
-		System.out.println("ìµœì†Œê°’ì€? "+small);
+		System.out.println("ÃÖ¼Ò°ªÀº? "+small);
 		
-		//250ì„ 2ì§„ìˆ˜ë¡œ ì¶œë ¥í•˜ì‹œì˜¤
+		//250À» 2Áø¼ö·Î Ãâ·ÂÇÏ½Ã¿À
 		String binary = Integer.toBinaryString(250);
-		System.out.println("2ì§„ìˆ˜ = "+binary);
+		System.out.println("2Áø¼ö = "+binary);
 		
-		//250ì„ 8ì§„ìˆ˜ë¡œ ì¶œë ¥í•˜ì‹œì˜¤
+		//250À» 8Áø¼ö·Î Ãâ·ÂÇÏ½Ã¿À
 		String oct = Integer.toOctalString(250);
-		System.out.println("8ì§„ìˆ˜ = "+oct);
+		System.out.println("8Áø¼ö = "+oct);
 		
-		//250ì„ 16ì§„ìˆ˜ë¡œ ì¶œë ¥í•˜ì‹œì˜¤
+		//250À» 16Áø¼ö·Î Ãâ·ÂÇÏ½Ã¿À
 		String hexa = Integer.toHexString(250);
-		System.out.println("16ì§„ìˆ˜ = "+hexa);
+		System.out.println("16Áø¼ö = "+hexa);
 	}
 
 }

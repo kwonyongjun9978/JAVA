@@ -4,15 +4,15 @@ public class Sungjuk {
 
 	public static void main(String[] args) {
 		/*
-		[ë¬¸ì œ] ì„±ì ê³„ì‚°
-		ì´ë¦„(name)ì´ L ì´ê³  êµ­ì–´ì ìˆ˜(kor) 85ì , ì˜ì–´ì ìˆ˜(eng) 78ì , ìˆ˜í•™ì ìˆ˜(math) 100ì¼ë•Œ
-		ì´ì (tot)ê³¼ í‰ê· (avg)ì„ êµ¬í•˜ì‹œì˜¤.
-		ë‹¨, í‰ê· ì€ ì†Œìˆ˜ì´í•˜ 2ì§¸ìë¦¬ê¹Œì§€ ì¶œë ¥í•˜ì‹œì˜¤.
-		ì´ì  = êµ­ì–´ì ìˆ˜ + ì˜ì–´ ì ìˆ˜ + ìˆ˜í•™ ì ìˆ˜
-		í‰ê·  = ì´ì  / ê³¼ëª©ìˆ˜
-		[ì‹¤í–‰ê²°ê³¼]
-		   *** L ì„±ì í‘œ ***
-		êµ­ì–´    ì˜ì–´    ìˆ˜í•™    ì´ì     í‰ê· 
+		[¹®Á¦] ¼ºÀû°è»ê
+		ÀÌ¸§(name)ÀÌ L ÀÌ°í ±¹¾îÁ¡¼ö(kor) 85Á¡, ¿µ¾îÁ¡¼ö(eng) 78Á¡, ¼öÇĞÁ¡¼ö(math) 100ÀÏ¶§
+		ÃÑÁ¡(tot)°ú Æò±Õ(avg)À» ±¸ÇÏ½Ã¿À.
+		´Ü, Æò±ÕÀº ¼Ò¼öÀÌÇÏ 2Â°ÀÚ¸®±îÁö Ãâ·ÂÇÏ½Ã¿À.
+		ÃÑÁ¡ = ±¹¾îÁ¡¼ö + ¿µ¾î Á¡¼ö + ¼öÇĞ Á¡¼ö
+		Æò±Õ = ÃÑÁ¡ / °ú¸ñ¼ö
+		[½ÇÇà°á°ú]
+		   *** L ¼ºÀûÇ¥ ***
+		±¹¾î    ¿µ¾î    ¼öÇĞ    ÃÑÁ¡    Æò±Õ
 		85     78    100   xxx    xx.xx
 		 */
 		int kor = 85;
@@ -22,12 +22,12 @@ public class Sungjuk {
 		double avg = tot/3.0;
 		char name = 'L';
 
-		System.out.println("\t***  " + name + "  ì„±ì í‘œ  ***");
-		System.out.println("êµ­ì–´\tì˜ì–´\tìˆ˜í•™\tì´ì \tí‰ê· ");
+		System.out.println("\t***  " + name + "  ¼ºÀûÇ¥  ***");
+		System.out.println("±¹¾î\t¿µ¾î\t¼öÇĞ\tÃÑÁ¡\tÆò±Õ");
 		System.out.println(kor+"\t"+eng+"\t"+math+"\t"+tot+"\t"+String.format("%.2f", avg));
 		
-		System.out.printf("\t***  %c  ì„±ì í‘œ   ***\n", name);
-		System.out.printf("êµ­ì–´\tì˜ì–´\tìˆ˜í•™\tì´ì \tí‰ê· \n");
+		System.out.printf("\t***  %c  ¼ºÀûÇ¥   ***\n", name);
+		System.out.printf("±¹¾î\t¿µ¾î\t¼öÇĞ\tÃÑÁ¡\tÆò±Õ\n");
 		System.out.printf("%d\t%d\t%d\t%d\t%.2f", kor,eng,math,tot,avg);
 		
 	}

@@ -7,17 +7,17 @@ public class Class01 {
 
 	public static void main(String[] args) throws IOException {
         // class : System, Math, FileWriter
-        // instance : f1, f2 ê°€ ê°€ë¦¬í‚¤ëŠ” ê°’
+        // instance : f1, f2 °¡ °¡¸®Å°´Â °ª
          
         System.out.println(Math.PI);
         System.out.println(Math.floor(1.8));
         System.out.println(Math.ceil(1.8));
   
         
-        //ê°ì²´ì§€í–¥ í”„ë¡œê·¸ë˜ë° : Class ì™€ Instance ë¼ëŠ” êµ¬ì¡°í™”ëœ ê°ì²´ë“¤ì„ ì„± ì²˜ëŸ¼ ìŒ“ì•„ í”„ë¡œê·¸ë¨ì„ ë§Œë“œëŠ” ê¸°ë²•.
-        //Class : ì„œë¡œ ì—°ê´€ëœ Methodì™€ Variableë¥¼ ì •ë¦¬ ì •ëˆí•˜ì—¬ ê°ì²´í™” í•œ ê²ƒìœ¼ë¡œ ì¼íšŒì„±ìœ¼ë¡œ ì‚¬ìš©.
-        //Instance : ê°ì²´í™” ëœ Classë¥¼ ì´ìš©í•˜ì—¬ ì„œë¡œ ë‹¤ë¥¸ Dataë¥¼ ê°€ì§„ ì„œë¡œ ê°™ì€ Methodë¥¼ ë³µì œí•˜ì—¬ ì‚¬ìš©.
-        //classë¥¼ f1,f2ë¡œ ì¸ìŠ¤í„´ìŠ¤í™”í•œë‹¤
+        //°´Ã¼ÁöÇâ ÇÁ·Î±×·¡¹Ö : Class ¿Í Instance ¶ó´Â ±¸Á¶È­µÈ °´Ã¼µéÀ» ¼º Ã³·³ ½×¾Æ ÇÁ·Î±×·¥À» ¸¸µå´Â ±â¹ı.
+        //Class : ¼­·Î ¿¬°üµÈ Method¿Í Variable¸¦ Á¤¸® Á¤µ·ÇÏ¿© °´Ã¼È­ ÇÑ °ÍÀ¸·Î ÀÏÈ¸¼ºÀ¸·Î »ç¿ë.
+        //Instance : °´Ã¼È­ µÈ Class¸¦ ÀÌ¿ëÇÏ¿© ¼­·Î ´Ù¸¥ Data¸¦ °¡Áø ¼­·Î °°Àº Method¸¦ º¹Á¦ÇÏ¿© »ç¿ë.
+        //class¸¦ f1,f2·Î ÀÎ½ºÅÏ½ºÈ­ÇÑ´Ù
         FileWriter f1 = new FileWriter("data.txt");
         f1.write("Hello");
         f1.write(" Java");
