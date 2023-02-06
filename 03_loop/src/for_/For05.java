@@ -22,7 +22,6 @@ public class For05 {
 [문제] 대문자(A~Z)(65~90)를 100개 발생하여 출력하시오
 - 1줄에 10개씩 출력
 - 100개중에서 A가 몇개 나왔는지 개수를 출력
-
 [실행결과]
 H  D  D  R  A  Y  A  K  T  H
 C  X  F  Z  B  S  L  Y  Q  D
@@ -34,6 +33,5 @@ F  T  I  Z  A  W  E  O  F  Z
 A  Y  C  I  U  Z  O  B  C  G
 H  G  Y  Z  V  P  I  R  L  G
 Y  H  R  R  M  H  Y  S  B  P
-
 A의 개수 = 6
 */
