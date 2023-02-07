@@ -21,8 +21,9 @@ public class Lotto {
 				}
 				
 			}
-			System.out.println(lotto[i]);
+			
 		}
+		//SelectionSort
 		//오름차순 정렬
 		for(int i=0; i<lotto.length-1; i++) {
 			for(int j=i+1; j<lotto.length; j++) {

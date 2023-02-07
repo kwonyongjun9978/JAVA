@@ -43,7 +43,6 @@ public class BaseBall {
 					user[1]=(num%100)/10;
 					user[2]=(num%100)%10;
 					
-					
 					for(int i=0; i<3; i++) {
 						
 						for(int j=0; j<3; j++) {
@@ -62,7 +61,7 @@ public class BaseBall {
 		            System.out.println("Á¤´ä!");
 		            break;
 					}
-		        	strike =0;
+		        	
 				}//while
 				}//if
 			else{

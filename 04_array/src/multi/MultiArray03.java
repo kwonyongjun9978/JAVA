@@ -4,7 +4,7 @@ public class MultiArray03 {
 
 	public static void main(String[] args) {
 		String[] name = {"홍길동", "프로도", "죠르디"};
-		int[][] jumsu = {{91,95,100,0},{100,88,75,0},{75,80,48,0}};
+		int[][] jumsu = {{91,95,100,0},{100,88,75,0},{75,80,48,0}}; //3행 4열
 		double[] avg = new double[3];
 		char[] grade = new char[3];
 		
