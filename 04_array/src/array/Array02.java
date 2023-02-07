@@ -3,17 +3,17 @@ package array;
 public class Array02 {
 
 	public static void main(String[] args) {
-		String[] ar = {"í˜¸ë‘ì´", "ì‚¬ì", "ì½”ë¼ë¦¬", "ê¸°ë¦°", "í•˜ì´ì• ë‚˜", "ê¸´íŒ”ì›ìˆ­ì´", "ìš©ì¤€"};
+		String[] ar = {"È£¶ûÀÌ", "»çÀÚ", "ÄÚ³¢¸®", "±â¸°", "ÇÏÀÌ¾Ö³ª", "±äÆÈ¿ø¼şÀÌ", "¿ëÁØ"};
 		
 		for(int i=0; i<ar.length; i++) {
 			System.out.println("ar["+i+"] = "+ar[i]);
-			System.out.println("ë¬¸ìì—´ì˜ í¬ê¸° = "+ar[i].length());
-			System.out.println("ì²«ë²ˆì§¸ ë¬¸ì = "+ar[i].charAt(0));
-			System.out.println("ë§ˆì§€ë§‰ ë¬¸ì = "+ar[i].charAt(ar[i].length()-1));
+			System.out.println("¹®ÀÚ¿­ÀÇ Å©±â = "+ar[i].length());
+			System.out.println("Ã¹¹øÂ° ¹®ÀÚ = "+ar[i].charAt(0));
+			System.out.println("¸¶Áö¸· ¹®ÀÚ = "+ar[i].charAt(ar[i].length()-1));
 			System.out.println();
 		}
 		
-		System.out.println("í™•ì¥ for");
+		System.out.println("È®Àå for");
 		for(String data : ar) {
 			System.out.println(data);
 		}

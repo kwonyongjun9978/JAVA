@@ -19,7 +19,8 @@ public class Array05 {
 		}
 		System.out.println();
 		for(int i=0; i<count.length; i++) { //26개의 알파벳 개수 출력
-			System.out.println((char)(i+65)+" : "+count[i]); //알파벳 개수 출력
+			System.out.print((char)(i+65)+" : "+count[i]+"\t"); //알파벳 개수 출력
+			if((i+1)%4==0)System.out.println();
 		}
 
 	}
