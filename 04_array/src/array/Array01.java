@@ -5,7 +5,7 @@ public class Array01 {
 	public static void main(String[] args) {
 		int[] ar;
 		ar = new int[5];
-		System.out.println("ë°°ì—´ëª… ar = "+ar); //ì£¼ì†Œ(í´ë˜ìŠ¤@16ì§„ìˆ˜)
+		System.out.println("¹è¿­¸í ar = "+ar); //ÁÖ¼Ò(Å¬·¡½º@16Áø¼ö)
 		ar[0]=25;
 		ar[1]=37;
 		ar[2]=55;
@@ -18,19 +18,19 @@ public class Array01 {
 		System.out.println("ar[4] = "+ar[4]);
 		System.out.println();
 		
-		System.out.println("ë°°ì—´ í¬ê¸° = "+ar.length);
+		System.out.println("¹è¿­ Å©±â = "+ar.length);
 		for(int i=0; i<ar.length; i++) {
 			System.out.println("ar["+i+"] = "+ar[i]);
 		}
 		System.out.println();
 		
-		System.out.println("ê±°ê¾¸ë¡œ ì¶œë ¥");
+		System.out.println("°Å²Ù·Î Ãâ·Â");
 		for(int i=ar.length-1; i>=0; i--) {
 			System.out.println("ar["+i+"] = "+ar[i]);
 		}
 		System.out.println();
 		
-		System.out.println("í™€ìˆ˜ ë°ì´í„°ë§Œ ì¶œë ¥");
+		System.out.println("È¦¼ö µ¥ÀÌÅÍ¸¸ Ãâ·Â");
 		for(int i=0; i<ar.length; i++) {
 			if(ar[i]%2 == 1) {
 				System.out.println("ar["+i+"] = "+ar[i]);
@@ -38,8 +38,8 @@ public class Array01 {
 		}
 		System.out.println();
 		
-		System.out.println("í™•ì¥ for");
-		for(int data : ar) { //arì˜ í¬ê¸°ë§Œí¼ forë¬¸ì„ ë°˜ë³µí•œë‹¤.
+		System.out.println("È®Àå for");
+		for(int data : ar) { //arÀÇ Å©±â¸¸Å­ for¹®À» ¹İº¹ÇÑ´Ù.
 			System.out.println(data);
 		}
 	
