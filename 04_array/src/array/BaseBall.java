@@ -36,7 +36,7 @@ public class BaseBall {
 				System.out.println();
 			
 				while(true) {
-					
+					strike = ball =0;
 					System.out.print("숫자 입력 : ");
 					int num = sc.nextInt();
 					user[0]=num/100;
