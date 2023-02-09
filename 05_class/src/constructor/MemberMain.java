@@ -6,7 +6,6 @@ public class MemberMain {
 		MemberService ms = new MemberService();
 		ms.menu();
 		
-
 	}
 
 }
