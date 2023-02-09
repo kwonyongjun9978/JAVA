@@ -8,7 +8,7 @@ public class ComputeMain {
 		Scanner sc = new Scanner(System.in);
 		System.out.print("횟수 입력 : ");
 		int co = sc.nextInt();
-		Compute[] ar = new Compute[co];
+		Compute[] ar = new Compute[co]; //객체 배열
 		for(int i=0; i<co; i++) {
 			System.out.println("["+(i+1)+"]번째");
 			System.out.print("x 입력 : ");

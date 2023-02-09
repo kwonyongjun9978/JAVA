@@ -4,11 +4,11 @@ import java.util.Scanner;
 
 public class MemberService {
 	Scanner sc = new Scanner(System.in);
-	private MemberDTO[] ar = new MemberDTO[5];
+	private MemberDTO[] ar = new MemberDTO[5]; //객체 배열
 
-	public MemberService() {
-		System.out.println("기본 생정자");
-	}
+//	public MemberService() {
+//		System.out.println("기본 생정자");
+//	}
 	public void menu(){
 		int num;
 		while(true) {
@@ -23,27 +23,67 @@ public class MemberService {
 			System.out.print("번호 : ");
 			num = sc.nextInt();
 			
+			System.out.println();
+			
 			if(num == 5) break; //while을 벗어나라 
-			if(num == 1) insertArticle();
+			if(num == 1) insert();
 			else if(num == 2) list();
 			else if(num == 3) update();
-		}
-		
-	}
-	private void update() {
+			else if(num == 4) delete();
+		} //while		
+	}// menu()
+	public void delete() {
 		System.out.print("핸드폰 번호 입력 : ");
 		String phone = sc.next();
-		
-		
+		int i;
+		for(i=0; i<ar.length; i++) {
+			if(ar[i]!=null) {
+				if(ar[i].getPhone().equals(phone)) {
+					ar[i]=null;
+					
+					System.out.println("1 row deleted");
+					
+					break;
+				}
+			}
 		}
-//		System.out.print("수정 할 이름 입력 : ");
-//		String name = sc.next();
-//		System.out.print("수정 할 핸드폰 입력 : ");
-//		String phone = sc.next();
-//		System.out.print("수정 할 주소 입력 : ");
-//		String address = sc.next();
-		
+		if(i == ar.length) System.out.println("찾는 회원이 없습니다");
 	}
+	public void update() {
+		System.out.print("핸드폰 번호 입력 : ");
+		String phone = sc.next();
+		int i;
+		for(i=0; i<ar.length; i++) {
+			if(ar[i]!=null) {
+				if(ar[i].getPhone().equals(phone)) { // == 주소 비교
+					System.out.println(ar[i].getName()+"\t"+
+							ar[i].getAge()+"\t"+
+							ar[i].getPhone()+"\t"+
+							ar[i].getAddress());
+					
+					System.out.println();
+					System.out.print("수정 할 이름 입력 : ");
+					String name = sc.next();
+					System.out.print("수정 할 핸드폰 입력 : ");
+					phone = sc.next();
+					System.out.print("수정 할 주소 입력 : ");
+					String address = sc.next();
+					
+					ar[i].setName(name);
+					ar[i].setPhone(phone);
+					ar[i].setAddress(address);
+					
+					System.out.println("1 row(s) updated");
+					break;
+				}
+			}
+		}
+		
+		if(i == ar.length) System.out.println("찾는 회원이 없습니다");
+		} //i == ar.length -> for문을 다 돌았다
+	
+
+		
 	public void list() {
 		for(MemberDTO dto : ar) {
 			if(dto != null)
@@ -54,7 +94,7 @@ public class MemberService {
 			
 		}
 	}
-	public void insertArticle() {
+	public void insert() {
 	    int i;
 	      for(i=0; i<ar.length; i++) {
 	         if(ar[i] == null) break;

@@ -39,13 +39,13 @@ public class PersonMain {
 		Person a; //객체 선언(class형 변수)
 		a = new Person(); //생성, 메모리의 heap영역에 생성(이름부여X, 주소O)
 		
-		System.out.println("객체 a = "+a);
+		System.out.println("객체 a = "+a); //주소
 		a.setName("권용준"); //호출 - 호출한 함수는 반드시 제자리로 돌아온다.
 		a.setAge(30); //호출
 		System.out.println("이름 = "+a.getName()+"  나이 = "+a.getAge());
 		
 		Person b = new Person();
-		System.out.println("객체 b = "+b);
+		System.out.println("객체 b = "+a);
 		
 		b.setName("송섹근"); //호출 - 호출한 함수는 반드시 제자리로 돌아온다.
 		b.setAge(25); //호출

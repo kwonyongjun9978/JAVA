@@ -1,7 +1,5 @@
 package constructor;
 
-
-
 public class VarArgs {
 	public VarArgs() {
 		System.out.println("기본 생성자");
@@ -25,7 +23,7 @@ public class VarArgs {
 	}
 	
 	public static void main(String[] args) {
-		VarArgs va = new VarArgs();
+		VarArgs va = new VarArgs(); //기본 생성자 생성
 		
 		System.out.println("합 = "+va.sum(10,20));
 		System.out.println("합 = "+va.sum(10,20,30));

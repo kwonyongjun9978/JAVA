@@ -13,7 +13,7 @@ class This{
 	}
 	
 	public void setC(int c) { //인수(argument), 매개변수(parameter) / void : 반환값(return)이 없다
-		 this.c = c; //this.b = class 필드 변수
+		 this.c = c; //
 	}
 	public int getC() {
 		return this.c; //this는 생략가능
@@ -36,7 +36,7 @@ public class ThisMain {
 		t.setB(20); //호출 - 호출한 메소드는 반드시 돌아온다.
 		System.out.println("b = "+t.getB());
 		
-		//c에 20을 넣어서 출력하시오
+		//c에 30을 넣어서 출력하시오
 		t.setC(30);
 		System.out.println("c = "+t.getC()+"\n");
 		
