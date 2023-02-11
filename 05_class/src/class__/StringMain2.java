@@ -8,39 +8,41 @@ public class StringMain2 {
 Scanner sc = new Scanner(System.in);
 		
 		System.out.print("문자열입력 : ");
-		String st1 = sc.next();
-		st1 = st1.toLowerCase();
+		String st = sc.next();
+		st = st.toLowerCase();
 		System.out.print("현재 문자열 입력 : ");
-		String st2 = sc.next();
+		String st_now = sc.next();
+		st_now = st_now.toLowerCase();
 		System.out.print("바꿀 문자열 입력 : ");
-		String change = sc.next();
+		String st_ch = sc.next();
+		st_ch = st_ch.toLowerCase();
 		
 		int count =0;
 		int index2=0;
 		int result=0;
-		int i=0;
 			
 		while(true) {
-		index2 = st1.indexOf(st2,result);
+			
+//		.indexOf( "찾을 특정 문자" , "시작할 위치" )
+			
+		index2 = st.indexOf(st_now,result);
 		result = index2;
-//		System.out.println(index2);
-		
+		System.out.println(result);
 		
 		if(index2==-1) {break;}
 		count++;
 		
-		if(result ==index2) {result++;}
+		if(result == index2) {result++;}
 	
-		}
+		}//while
 	
-		if(st1.length()<st2.length()) {
+		if(st.length()<st_now.length()) {
 			System.out.println("입력한 문자열의 크기가 작습니다.");
 			System.out.println("치환 할 수 없습니다.");
 		}
 		
 		else{
-		st1.replace(st2, st1);
-		System.out.println(st1.replace(st2, change));
+		System.out.println(st.replace(st_now, st_ch));
 		System.out.println(count+"번 치환");
 		}
 		
