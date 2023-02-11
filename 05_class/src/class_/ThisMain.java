@@ -35,6 +35,7 @@ public class ThisMain {
 		System.out.println("객체 t = "+t);
 		t.setB(20); //호출 - 호출한 메소드는 반드시 돌아온다.
 		System.out.println("b = "+t.getB());
+		System.out.println();
 		
 		//c에 30을 넣어서 출력하시오
 		t.setC(30);
