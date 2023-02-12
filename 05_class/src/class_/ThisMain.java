@@ -1,20 +1,25 @@
 package class_;
 
 class This{
-	private int b; //필드
+	//필드
+	private int b; 
 	private static int c;
 	
-	public void setB(int b) { //인수(argument), 매개변수(parameter) / void : 반환값(return)이 없다
+	//메소드(setters,getters)
+	//setters메소드에는 void 사용
+	public void setB(int b) { //int b : 매개변수(parameter) / void : 반환값(return)이 없다
 		System.out.println("this = "+this);
 		 this.b = b; //this.b = class 필드 변수 
 	}
+	
 	public int getB() {
 		return this.b; //this는 생략가능
 	}
 	
-	public void setC(int c) { //인수(argument), 매개변수(parameter) / void : 반환값(return)이 없다
-		 this.c = c; //
+	public void setC(int c) { 
+		 this.c = c;
 	}
+	
 	public int getC() {
 		return this.c; //this는 생략가능
 	}
@@ -23,7 +28,7 @@ class This{
 
 public class ThisMain {
 
-	private int a; //필드, private
+	private int a; //필드
 	
 	public static void main(String[] args) {
 		ThisMain tm = new ThisMain();
@@ -33,7 +38,7 @@ public class ThisMain {
 		//b에 20을 넣어서 출력하시오
 		This t = new This();
 		System.out.println("객체 t = "+t);
-		t.setB(20); //호출 - 호출한 메소드는 반드시 돌아온다.
+		t.setB(20); //20 : 인수(argument) / 호출 - 호출한 메소드는 반드시 돌아온다.
 		System.out.println("b = "+t.getB());
 		System.out.println();
 		

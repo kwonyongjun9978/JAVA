@@ -32,6 +32,7 @@ public class MemberService {
 			else if(num == 4) delete();
 		} //while		
 	}// menu()
+	
 	public void delete() {
 		System.out.print("핸드폰 번호 입력 : ");
 		String phone = sc.next();
@@ -49,6 +50,7 @@ public class MemberService {
 		}
 		if(i == ar.length) System.out.println("찾는 회원이 없습니다");
 	}
+	
 	public void update() {
 		System.out.print("핸드폰 번호 입력 : ");
 		String phone = sc.next();
@@ -82,8 +84,6 @@ public class MemberService {
 		if(i == ar.length) System.out.println("찾는 회원이 없습니다");
 		} //i == ar.length -> for문을 다 돌았다
 	
-
-		
 	public void list() {
 		for(MemberDTO dto : ar) {
 			if(dto != null)
@@ -93,7 +93,13 @@ public class MemberService {
 									dto.getAddress());
 			
 		}
+		
+		if(ar[0]==null&&ar[1]==null&&ar[2]==null&&ar[3]==null&&ar[4]==null) {
+			System.out.println("아직 가입자가 없습니다.");
+			
+		}
 	}
+	
 	public void insert() {
 	    int i;
 	      for(i=0; i<ar.length; i++) {

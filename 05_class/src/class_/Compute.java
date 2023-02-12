@@ -36,7 +36,8 @@ public class Compute {
 		return mul;
 	}
 	
-	public String getDiv() {
+	//문자열로 형변환하여 리턴한다.
+	public String getDiv() { 
 		return String.format("%.2f", div);
 	}
 }

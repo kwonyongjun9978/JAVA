@@ -12,11 +12,11 @@ public class SungJukMain2 {
 		ar[0].setData("홍길동", 91, 95, 100);
 		ar[0].calc();
 		
-		ar[1] = new Sungjuk(); //클래스 생성
+		ar[1] = new Sungjuk(); 
 		ar[1].setData("프로도", 100, 89, 75);
 		ar[1].calc();
 		
-		ar[2] = new Sungjuk(); //클래스 생성
+		ar[2] = new Sungjuk(); 
 		ar[2].setData("조르디", 75, 80, 48);
 		ar[2].calc();
 		

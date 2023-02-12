@@ -45,15 +45,15 @@ public class PersonMain {
 		System.out.println("이름 = "+a.getName()+"  나이 = "+a.getAge());
 		
 		Person b = new Person();
-		System.out.println("객체 b = "+a);
+		System.out.println("객체 b = "+b);
 		
-		b.setName("송섹근"); //호출 - 호출한 함수는 반드시 제자리로 돌아온다.
-		b.setAge(25); //호출
+		b.setName("송섹근"); 
+		b.setAge(25); 
 		System.out.println("이름 = "+b.getName()+"  나이 = "+b.getAge());
 		
 		Person c = new Person();
 		System.out.println("객체 c = "+c);
-		c.setData("둘리", 100); //호출
+		c.setData("둘리", 100); 
 		System.out.println("이름 = "+c.getName()+"  나이 = "+c.getAge());
 		
 		Person d = new Person();

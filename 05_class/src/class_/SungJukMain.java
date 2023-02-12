@@ -4,7 +4,7 @@ public class SungJukMain {
 
 	public static void main(String[] args) {
 		Sungjuk aa = new Sungjuk();
-		aa.setData("홍길동", 91, 95, 100);//호출
+		aa.setData("홍길동", 91, 95, 100);
 		aa.calc();
 		System.out.println(aa.getName()+"\t"+
 		aa.getKor()+"\t"+aa.getEng()+"\t"+
@@ -12,7 +12,7 @@ public class SungJukMain {
 		aa.getAvg()+"\t"+aa.getGrade());
 		
 		Sungjuk bb = new Sungjuk();
-		bb.setData("프로도", 100, 89, 75);//호출
+		bb.setData("프로도", 100, 89, 75);
 		bb.calc();
 		System.out.println(bb.getName()+"\t"+
 		bb.getKor()+"\t"+bb.getEng()+"\t"+
@@ -20,7 +20,7 @@ public class SungJukMain {
 		bb.getAvg()+"\t"+bb.getGrade());
 		
 		Sungjuk cc = new Sungjuk();
-		cc.setData("조르디", 75, 80, 48);//호출
+		cc.setData("조르디", 75, 80, 48);
 		cc.calc();
 		System.out.println(cc.getName()+"\t"+
 		cc.getKor()+"\t"+cc.getEng()+"\t"+
