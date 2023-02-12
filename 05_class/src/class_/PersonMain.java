@@ -36,7 +36,7 @@ public class PersonMain {
 
 	public static void main(String[] args) {
 		
-		Person a; //객체 선언(class형 변수)
+		Person a; //객체 선언(class형 변수=참조변수)
 		a = new Person(); //생성, 메모리의 heap영역에 생성(이름부여X, 주소O)
 		
 		System.out.println("객체 a = "+a); //주소
