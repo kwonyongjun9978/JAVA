@@ -29,7 +29,7 @@ public class Today {
 		Calendar cal2 = Calendar.getInstance();//메소드
 		
 		
-		int year = cal.get(Calendar.YEAR); // =int year = cal.get(1);
+		int year = cal.get(Calendar.YEAR); // int year = cal.get(1);
 		int month = cal.get(Calendar.MONTH)+1; //1월 : 0, 2월 : 1 //int month = cal.get(2)+1;
 		int day = cal.get(cal.DAY_OF_MONTH);
 		int week = cal.get(cal.DAY_OF_WEEK); //일요일 : 1, 월요일 : 2
