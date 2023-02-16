@@ -20,11 +20,11 @@ class StaticTest{
 	}
 	
 	public void disp() {
-		System.err.println("a = "+this.a+" b = "+StaticTest.b);
+		System.out.println("a = "+this.a+" b = "+StaticTest.b);
 	}
 	
 	public static void output() {
-		System.err.println("static method...");
+		System.out.println("static method...");
 		//System.err.println("a = "+a+" b = "+b); //error(static메소드안에서는 static 변수만 사용 가능)
 	}
 	
