@@ -6,8 +6,8 @@ class This{
 	private static int c;
 	
 	//메소드(setters,getters)
-	//setters메소드에는 void 사용
-	public void setB(int b) { //int b : 매개변수(parameter) / void : 반환값(return)이 없다
+	//setters메소드에는 void 사용 -> 반환값(return)이 없다
+	public void setB(int b) { //int b : 매개변수(parameter) 
 		System.out.println("this = "+this);
 		 this.b = b; //this.b = class 필드 변수 
 	}

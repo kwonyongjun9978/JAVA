@@ -5,7 +5,7 @@ public class Compute {
 	private double div;
 	
 	public void setData(int x, int y) {
-		 this.x= x; //this.x = class 필드 변수
+		 this.x = x; //this.x = class 필드 변수
 		 this.y = y;	
 	}
 	

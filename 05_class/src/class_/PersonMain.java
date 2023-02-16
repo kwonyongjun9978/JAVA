@@ -7,7 +7,7 @@ class Person{
 	
 	//method ±¸Çö
 	public void setName(String n){
-		name=n;
+		this.name=n;
 	}
 	
 	public void setAge(int a) {

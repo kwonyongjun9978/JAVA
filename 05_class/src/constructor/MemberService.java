@@ -41,15 +41,13 @@ public class MemberService {
 			if(ar[i]!=null) {
 				if(ar[i].getPhone().equals(phone)) {
 					ar[i]=null;
-					
 					System.out.println("1 row deleted");
-					
 					break;
-				}
-			}
-		}
+				}//if
+			}//if
+		}//for
 		if(i == ar.length) System.out.println("찾는 회원이 없습니다");
-	}
+	}//delete
 	
 	public void update() {
 		System.out.print("핸드폰 번호 입력 : ");
@@ -77,12 +75,12 @@ public class MemberService {
 					
 					System.out.println("1 row(s) updated");
 					break;
-				}
-			}
-		}
+				}//if
+			}//if
+		}//for
 		
-		if(i == ar.length) System.out.println("찾는 회원이 없습니다");
-		} //i == ar.length -> for문을 다 돌았다
+		if(i == ar.length) System.out.println("찾는 회원이 없습니다"); //i==5(for문은 다 돌고 나온값)
+	}//update 
 	
 	public void list() {
 		for(MemberDTO dto : ar) {
@@ -92,23 +90,22 @@ public class MemberService {
 									dto.getPhone()+"\t"+
 									dto.getAddress());
 			
-		}
+		}//for
 		
 		if(ar[0]==null&&ar[1]==null&&ar[2]==null&&ar[3]==null&&ar[4]==null) {
 			System.out.println("아직 가입자가 없습니다.");
-			
-		}
-	}
+		}//if
+	}//list
 	
 	public void insert() {
 	    int i;
 	      for(i=0; i<ar.length; i++) {
 	         if(ar[i] == null) break;
-	      }
+	      }//for
 	      if(i == ar.length) {
 	         System.out.println(ar.length + "명의 정원이 꽉 찼습니다");
 	         return; //함수를 벗어나라
-	      }
+	      }//if
 	      
 	      //데이터 입력
 	      System.out.print("이름 입력 : ");
@@ -124,10 +121,10 @@ public class MemberService {
 	         if(ar[i] == null) { 
 	            ar[i] = new MemberDTO(name, age, phone, address);
 	            break; //for를 벗어나라
-	         }
-	      }      
+	         }//if
+	      }//for      
 	      
 	      System.out.println("1 row created");
-	}	
-}
+	}//insert	
+}//class
 
