@@ -26,7 +26,8 @@ public class SungJukUpdate implements SungJuk{
 //								   arrayList.get(i).getAvg());
 		int sw=0;
 		for(SungJukDTO sungJukDTO : arrayList) {
-			if(sungJukDTO.getNo() == no) {
+			if(sungJukDTO.getNo() == no)
+			{
 				sw=1;
 				
 				System.out.println(sungJukDTO);

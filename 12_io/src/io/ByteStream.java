@@ -12,8 +12,8 @@ public class ByteStream {
 			BufferedInputStream bis = new BufferedInputStream(new FileInputStream(new File("data.txt")));
 			int data;
 			
-			while( (data = bis.read()) != -1){
-				System.out.print(data+" ");
+			while( (data = bis.read()) != -1){  //read() : 한글자씩 읽는다
+				System.out.print((char)data+" ");
 			}
 			System.out.println();
 			
@@ -22,3 +22,9 @@ public class ByteStream {
 	}
 
 }
+/*
+enter
+- 다음줄 \n 13
+- 맨 앞 \r 10
+ */
+

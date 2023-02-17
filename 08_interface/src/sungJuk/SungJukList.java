@@ -7,7 +7,7 @@ public class SungJukList implements SungJuk{
 	@Override
 	public void execute(ArrayList<SungJukDTO> arrayList) {
 		System.out.println();
-		System.err.println("번호\t이름\t국어\t영어\t수학\t총점\t평균");
+		System.out.println("번호\t이름\t국어\t영어\t수학\t총점\t평균");
 		
 		/*
 		for(int i=0; i<arrayList.size(); i++) {
