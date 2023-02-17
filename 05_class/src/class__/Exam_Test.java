@@ -23,7 +23,7 @@ public class Exam_Test {
     public void compare() {
     	for(int i = 0 ; i < ox.length; i++){
 //    						JUNG.length();
-            if (dap.charAt(i)==JUNG.charAt(i)){
+            if (dap.charAt(i)==JUNG.charAt(i)){ //charAt() : 지정된 인덱스에 있는 문자를 반환한다.
                 ox[i] = 'O';
                 score = score +20;
             }
