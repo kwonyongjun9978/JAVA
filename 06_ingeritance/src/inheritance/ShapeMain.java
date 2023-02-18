@@ -109,9 +109,11 @@ public class ShapeMain {
 //		sadari.calcArea();
 //		sadari.disArea();
 		
-		
-		//다형성
-		//부모클래스가 모든 자식클래스를 참조할수 있다
+		/*
+		다형성
+		부모클래스가 모든 자식클래스를 참조할수 있다
+		여러 가지 타입의 객체를 하나의 자료 구조 안에 모아서 처리한다.
+		*/
 		Shape shape;
 		shape = new Sam();
 		shape.calcArea();
@@ -127,9 +129,5 @@ public class ShapeMain {
 		shape.calcArea();
 		shape.disArea();
 		System.out.println();
-		
-		
-
 	}
-
 }

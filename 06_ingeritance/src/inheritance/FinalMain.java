@@ -57,11 +57,12 @@ public class FinalMain {
 		System.out.println("빨강 = "+Color.RED);
 		System.out.println("빨강 = "+Color.RED.ordinal());
 		
-		for( Color data : Color.values()) {
+		for(Color data : Color.values()) {
 			System.out.println(data+"\t"+data.ordinal());
 		}
 
 	}
 
 }
-//
+//final 메소드는 Override를 할 수 없다(종단 메소드)
+//final 클래스는 자식클래스를 가질 수 없다 - 상속이 안된다(종단 클래스)

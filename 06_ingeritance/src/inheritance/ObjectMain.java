@@ -1,13 +1,13 @@
 package inheritance;
 
 class Test extends Object {
-	
+
 }
 
 class Sample extends Object{
 	@Override
 	public String toString() {
-		return getClass()+"@용준";
+		return getClass()+"@용준"; //getClass() : 객체가 어떤 클래스로 생성되어있는지에 대한 정보를 반환한다.
 	}
 }
 
@@ -27,7 +27,7 @@ public class ObjectMain {
 	public static void main(String[] args) {
 		Test t = new Test();
 		System.out.println("객체 t = "+t);//클래스명@16진수
-		System.out.println("객체 t = "+t.toString());
+		System.out.println("객체 t = "+t.toString()); //toString() : 객체의 정보를 String(문자열)형으로 형변환 해준다.
 		System.out.println("객체 t = "+t.hashCode()); //hashCode() : 주소의 값을 10진수로 변경
 		System.out.println();
 		
@@ -51,6 +51,8 @@ public class ObjectMain {
 		System.out.println("bb.equals(cc) : "+bb.equals(cc)); //문자열 비교
 		System.out.println();
 		
+		//Object에서는 == , equals() 가 모두 참조값(reference) 만으로 비교한다.
+		//단, String만이 equals()가 내용(문자열)을 비교한다.
 		Object dd = new Object();
 		Object ee = new Object();
 		System.out.println("dd==ee : "+(dd==ee)); //주소 비교

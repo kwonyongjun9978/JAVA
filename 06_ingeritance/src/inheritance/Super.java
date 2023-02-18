@@ -13,7 +13,7 @@ public class Super extends Object{
 	}
 	
 	public void disp() {
-		System.err.println("个公霸 = "+this.weight);
-		System.err.println("虐 = "+height);
+		System.out.println("个公霸 = "+this.weight);
+		System.out.println("虐 = "+height);
 	}
 }
