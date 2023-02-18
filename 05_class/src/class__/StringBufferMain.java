@@ -14,9 +14,10 @@ public class StringBufferMain {
 	}
 	
 	public void output() {
-		StringBuffer buffer = new StringBuffer(); //append() : 추가, delete() : 제거
+		StringBuffer buffer = new StringBuffer(); 
 //		StringBuffer buffer = " " // X
 		
+		//append() : 추가, delete() : 제거
 		for(int i=1; i<10; i++) {
 			//System.out.println(dan+"*"+i+"="+(dan*i));
 			buffer.append(dan);
@@ -25,6 +26,9 @@ public class StringBufferMain {
 			buffer.append("=");
 			buffer.append(dan*i);
 			System.out.println(buffer.toString()); //StringBuffer -> String 변환
+			
+			//StringBuffer는 값이 사라지지 않고 보관됨
+			// 2*1=2 2*2=4 2*3=6 2*4=8 2*5=10 2*6=12 2*7=14 2*8=16 2*9=18 -> delete() 필요
 			buffer.delete(0,buffer.length());
 		}
 	}

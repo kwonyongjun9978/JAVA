@@ -21,8 +21,8 @@ public class Exam_Test {
     }
     
     public void compare() {
-    	for(int i = 0 ; i < ox.length; i++){
-//    						JUNG.length();
+    	for(int i = 0 ; i < ox.length; i++){ //배열의 길이
+//    						JUNG.length(); //문자열의 길이
             if (dap.charAt(i)==JUNG.charAt(i)){ //charAt() : 지정된 인덱스에 있는 문자를 반환한다.
                 ox[i] = 'O';
                 score = score +20;

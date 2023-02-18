@@ -4,53 +4,40 @@ import java.util.Scanner;
 
 public class StringMain2 {
 
-	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		
-		System.out.print("문자열입력 : ");
-		String st = sc.next();
-		System.out.print("현재 문자열 입력 : ");
-		String st_now = sc.next();
-		st_now = st_now.toLowerCase();
-		System.out.print("바꿀 문자열 입력 : ");
-		String st_ch = sc.next();
-		
-		st = st.toLowerCase();
-		st_now = st_now.toLowerCase();
-		
-		
-		int count =0;
-		int index2=0;
-		int result=0;
-			
-		while(true) {
-			
-//		.indexOf( "찾을 특정 문자" , "시작할 위치" ) //맨처음에 만난 "찾은 특정 문자"만 알려준다
-			
-		index2 = st.indexOf(st_now,result);
-		result = index2;
-//		System.out.println(result);
-		
-		if(index2==-1) {break;}
-		count++;
-		
-		if(result == index2) {result++;}
-	
-		}//while
-	
-		if(st.length()<st_now.length()) {
-			System.out.println("입력한 문자열의 크기가 작습니다.");
-			System.out.println("치환 할 수 없습니다.");
-//			return; //함수를 벗어나라
-			System.exit(0); //프로그램 강제 종료
-		}
-		else{
-		System.out.println(st.replace(st_now, st_ch));
-		System.out.println(count+"번 치환");
-		}
-		
+   public static void main(String[] args) {
+      Scanner scan = new Scanner(System.in);
+      
+      System.out.print("문자열 입력 : ");
+        String original = scan.next();
 
-	}
+        System.out.print("현재 문자열 입력 : ");
+        String current = scan.next();
+
+        System.out.print("바꿀 문자열 입력 : ");
+        String after = scan.next();
+        
+        if(original.length() < current.length()) {
+           System.out.println("입력한 문자열의 크기가 작습니다");
+           System.out.println("치환 할 수 없습니다");
+           //return; //함수를 벗어나라
+           System.exit(0); //프로그램 강제 종료
+        }
+        
+        original = original.toLowerCase();
+        current = current.toLowerCase();
+        
+        int index = 0;
+        int count = 0;
+        
+//		.indexOf( "찾을 특정 문자" , "시작할 위치" ) //맨처음에 만난 "찾은 특정 문자"만 알려준다
+        while((index = original.indexOf(current, index)) != -1) {
+           count++;
+           index = index + current.length();   
+        }//while
+  
+        System.out.println(original.replace(current, after));
+        System.out.println(count + "번 치환");
+   }
 
 }
 /*

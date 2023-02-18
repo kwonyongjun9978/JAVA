@@ -5,14 +5,14 @@ public class StringMain {
 	public static void main(String[] args) {
 		String a= "apple"; //literal 생성(but 모든 class는 new 생성자로 생성해야 한다)
 		String b= "apple";
-		if(a==b) { //주소
+		if(a==b) { //주소 비교
 			System.out.println("a와 b의 참조값은 같다.");
 		}
 		else {
 			System.out.println("a와 b의 참조값은 다르다.");
 		}
 		
-		if(a.equals(b)) { //안에 들어있는 문자열
+		if(a.equals(b)) { //문자열 비교
 			System.out.println("a와 b의 문자열은 같다.");
 		}
 		else {
@@ -30,7 +30,7 @@ public class StringMain {
 			System.out.println("c와 d의 참조값은 다르다.");
 		}
 		
-		if(c.equals(d)) {
+		if(c.equals(d)) { //문자열 비교
 			System.out.println("c와 d의 문자열은 같다.");
 		}
 		else {
