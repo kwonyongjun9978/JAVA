@@ -6,20 +6,19 @@ import java.util.Iterator;
 
 public class CollectionMain {
 
-	@SuppressWarnings("all")
+	@SuppressWarnings("all") //all : 모든 경고를 억제
 	public static void main(String[] args) {
 		/*
-		인터페이스 Collection 사용하려면?
+		Collection 인터페이스를 사용하려면?
 		1. implements
 		 -모든 추상메소드를 오버라이드 해줘야 한다, but collection인터페이스에는 추상메소드가 많다..
-		2.대신 Override해주는 클래스
+		2.대신 override 해주는 클래스 (우체국 택배 역할)-interface를 대신 가져옴
 		 -Collection coll = new ArrayList();
-		3.메소드
+		3.메소드 이용
 		 -Iterator it = coll.iterator();
 		*/
-		
-		Collection coll = new ArrayList();
-		coll.add("호랑이");
+		Collection coll = new ArrayList(); //2번 방법 사용
+		coll.add("호랑이"); //add() : 원소를 추가
 		coll.add("사자");
 		coll.add("호랑이"); //중복 허용
 		coll.add(25);
@@ -27,9 +26,9 @@ public class CollectionMain {
 		coll.add("기린");
 		coll.add("코끼리");
 		
-		Iterator it = coll.iterator(); //하나의 지시자
-		while(it.hasNext()) { //항목이 있냐? (true), 없으면 (false)
-			System.out.println(it.next());  //항목을 꺼내고 다음 항목으로 이동
+		Iterator it = coll.iterator(); 
+		while(it.hasNext()) { 
+			System.out.println(it.next()); 
 		}
 	}
 

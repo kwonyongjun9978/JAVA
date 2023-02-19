@@ -11,13 +11,14 @@ public class StackMain {
 		Stack<String> stack = new Stack<String>();
 		
 		for(int i=0; i<groupA.length; i++) {
-			stack.push(groupA[i]);
+			stack.push(groupA[i]); //push() : 주어진 객체를 스택에 넣는다.
 		}
 		
-		while(! stack.isEmpty()) {
-			out.println(stack.pop());
+		while(!stack.isEmpty()) {
+			out.println(stack.pop()); //pop() : 스택의 맨 위 객체를 가져온다, 객체를 스택에서 제거한다.
 		}
 
 	}
 
 }
+//stack : LIFO

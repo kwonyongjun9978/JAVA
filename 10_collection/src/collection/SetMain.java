@@ -7,7 +7,8 @@ import java.util.Set;
 public class SetMain {
 
 	public static void main(String[] args) {
-		Set<String> set = new HashSet<String>();
+		//Collection 인터페이스 Set
+		Set<String> set = new HashSet<String>(); 
 		
 		set.add("호랑이");
 		set.add("사자");
