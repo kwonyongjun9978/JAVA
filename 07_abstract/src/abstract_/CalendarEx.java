@@ -18,6 +18,7 @@ public class CalendarEx {
 		this.month = sc.nextInt();
 	}
 	public void calc() {
+		//Calendar : 추상 클래스
 		Calendar cal = Calendar.getInstance(); //메소드를 이용하여 클래스 생성
 		
 		//생성할 때 기준인 시스템 날짜를 내가 원하는 날짜로 변경

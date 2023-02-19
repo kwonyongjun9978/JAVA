@@ -28,20 +28,24 @@ public class NumberMain {
 		System.out.println();
 		
 		//메소드 이용하여 생성
-//		NumberFormat nf4 = NumberFormat.getInstance();
-		NumberFormat nf4 = NumberFormat.getCurrencyInstance();
-		nf4.setMaximumFractionDigits(2);//소수이하 2째자리
-		nf4.setMinimumFractionDigits(2);
+		NumberFormat nf4 = NumberFormat.getInstance();
+//		NumberFormat nf4 = NumberFormat.getCurrencyInstance(Locale.KOREAN);
+//		nf4.setMaximumFractionDigits(2);//소수이하 2째자리
+//		nf4.setMinimumFractionDigits(2);
 		System.out.println(nf4.format(12345678.456789));
 		System.out.println(nf4.format(12345678));
 		System.out.println();
 		
 		NumberFormat nf5 = NumberFormat.getCurrencyInstance(Locale.US);
-		nf5.setMaximumFractionDigits(2);//소수이하 2째자리
-		nf5.setMinimumFractionDigits(2);
+//		nf5.setMaximumFractionDigits(2);//소수이하 2째자리
+//		nf5.setMinimumFractionDigits(2);
 		System.out.println(nf5.format(12345678.456789));
 		System.out.println(nf5.format(12345678));
 		System.out.println();
 	}
-
+	
+	//getInstance() : 소수이하 3째자리까지 출력, 소수이하 자리수가 없으면 출력X
+	//getCurrencyInstance() : 소수이하 무조건 2째자리까지 출력
+	//setMaximumFractionDigits(2) : 소수이하 최대 2째짜리까지 출력
+	//setMinimumFractionDigits(2) : 소수이하 최소 2째짜리까지 출력
 }

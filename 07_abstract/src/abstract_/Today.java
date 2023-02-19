@@ -18,9 +18,9 @@ public class Today {
 		
 		//입력 - 내생일
 		SimpleDateFormat input = new SimpleDateFormat("yyyyMMdd");
-		Date birth = input.parse("19941217"); //String -> Date형 변환
-		System.out.println("내 생일 : "+birth);
-		System.out.println("내 생일 : "+sdf.format(birth));
+		date = input.parse("19941217"); //String -> Date형 변환
+		System.out.println("내 생일 : "+date);
+		System.out.println("내 생일 : "+sdf.format(date));
 		System.out.println();
 		
 //		Calendar cal = new Calendar(); //error : 추상클래스라 생성이 안됨
@@ -30,7 +30,7 @@ public class Today {
 		
 		
 		int year = cal.get(Calendar.YEAR); // int year = cal.get(1);
-		int month = cal.get(Calendar.MONTH)+1; //1월 : 0, 2월 : 1 //int month = cal.get(2)+1;
+		int month = cal.get(Calendar.MONTH)+1; //1월 : 0, 2월 : 1 /int month = cal.get(2)+/1;
 		int day = cal.get(cal.DAY_OF_MONTH);
 		int week = cal.get(cal.DAY_OF_WEEK); //일요일 : 1, 월요일 : 2
 		

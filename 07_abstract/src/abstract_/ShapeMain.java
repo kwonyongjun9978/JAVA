@@ -94,21 +94,7 @@ class Sadari extends Shape{
 public class ShapeMain {
 
 	public static void main(String[] args) {
-//		Sam sam = new Sam();
-//		sam.calcArea();
-//		sam.disArea();
-//		System.out.println();
-//		Sa sa = new Sa();
-//		sa.calcArea();
-//		sa.disArea();
-//		System.out.println();
-//		Sadari sadari = new Sadari();
-//		sadari.calcArea();
-//		sadari.disArea();
-		
-		
-		//다형성
-		//부모클래스가 모든 자식클래스를 참조할수 있다
+
 		Shape shape;
 		shape = new Sam();
 		shape.calcArea();
@@ -124,9 +110,7 @@ public class ShapeMain {
 		shape.calcArea();
 		shape.disArea();
 		System.out.println();
-		
-		
-
+	
 	}
 
 }
