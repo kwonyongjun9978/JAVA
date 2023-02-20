@@ -29,7 +29,8 @@ public class PersonDTO implements Comparable<PersonDTO> {
 	public String toString() {
 		return name + "\t" + age;
 	}
-
+	
+	//Comparable의 compareTo 메소드 오버라이드
 	@Override
 	public int compareTo(PersonDTO dto) {
 		// age로 오름차순

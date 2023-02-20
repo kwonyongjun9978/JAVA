@@ -25,7 +25,7 @@ public class OverrideMain {
 	public static void main(String[] args) {
 		BB aa = new BB(); //AA클래스와 BB클래스 메소드(private제외),필드(private제외) 모두 사용 가능
 		aa.disp(); //BB : 13, 오버라이딩된 자식 메소드 호출
-		System.out.println("aa : "+aa.a); //13 ????????? 8아닌가?
+		System.out.println("aa : "+aa.a); 
 		System.out.println();
 		
 		/*업캐스팅(부모 = 자식)
@@ -39,7 +39,7 @@ public class OverrideMain {
 		
 		//다운캐스팅( 자식 = 부모, 부모 객체를 자식 참조 변수로 참조(error) -> 자식 = (자식)부모 )
 		BB cc = (BB)bb; //자식 = (자식)부모
-		cc.disp();//BB : 18 ???????????자식 메소드 호출후 부모 메소드도 호출하나?(다운캐스팅일때는 메소드를 2번 호출??)
+		cc.disp();//BB : 18 //위에서 업캐스팅을 통해 객체가 생성되어서 a 값이 13으로 설정된후 다시 BB클래스의 disp()를 호출
 		System.out.println("cc : "+cc.a); //18
 		System.out.println();
 		

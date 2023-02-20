@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 public class PersonMain {
 	
+	//PersonDTO 타입의 ArrayList를 반환하는 init 메서드를 선언
 	public ArrayList<PersonDTO> init() { //구현
 		PersonDTO aa = new PersonDTO("홍길동",25);
 		PersonDTO bb = new PersonDTO("프로도",30);

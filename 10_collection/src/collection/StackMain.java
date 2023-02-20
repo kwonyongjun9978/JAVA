@@ -14,7 +14,7 @@ public class StackMain {
 			stack.push(groupA[i]); //push() : 주어진 객체를 스택에 넣는다.
 		}
 		
-		while(!stack.isEmpty()) {
+		while(!stack.isEmpty()) { //isEmpty() : 컬렉션 인터페이스의 메소드, 공백 상태이면 true 반환
 			out.println(stack.pop()); //pop() : 스택의 맨 위 객체를 가져온다, 객체를 스택에서 제거한다.
 		}
 
