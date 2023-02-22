@@ -32,6 +32,7 @@ public class SungJukSort implements SungJuk {
 	        			if(s1.getTot() < s2.getTot()) return 1;
 	        			else if(s1.getTot() > s2.getTot()) return -1;
 	        			else return 0;
+	  
 	        		}
 	        	};
 	        	
