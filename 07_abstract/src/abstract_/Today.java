@@ -25,8 +25,10 @@ public class Today {
 		
 //		Calendar cal = new Calendar(); //error : 추상클래스라 생성이 안됨
 		//기준은 시스템 날짜와 시간
-		Calendar cal = new GregorianCalendar();//Sub Class
-		Calendar cal2 = Calendar.getInstance();//메소드
+		Calendar cal = new GregorianCalendar();//Sub Class이용 => public class GregorianCalendar extends Calendar 
+											   //Calendar 추상클래스를 상속받은 GregorianCalendar 자식 클래스는 java에서 정의된 클래스여서 따로 Calendar 추상클래스의 추상메소드 오버라이드를 할 필요없다. 
+											   //이미 GregorianCalendar 자식 클래스에 Calendar 추상클래스의 추상메소드들이 오버라이드 되어 내장되어있다
+		Calendar cal2 = Calendar.getInstance();//메소드이용
 		
 		
 		int year = cal.get(Calendar.YEAR); // int year = cal.get(1);

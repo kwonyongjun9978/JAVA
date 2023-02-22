@@ -13,7 +13,7 @@ public class CollectionMain {
 		Collection 인터페이스를 사용하려면?
 		1. implements
 		 -인터페이스를 구현한 클래스에서 인터페이스의 모든 추상메소드를 오버라이드 해줘야 한다, but collection인터페이스에는 추상메소드가 많다..
-		2.대신 override(오버라이드된 메소드들이 내장되어있음)해주는 클래스(우체국 택배 역할)-interface를 대신 가져옴
+		2.대신 override해주는 클래스(우체국 택배 역할)(오버라이드된 메소드들이 내장되어있음)-interface를 대신 가져옴
 		 -Collection coll = new ArrayList();
 		3.메소드 이용
 		 -Iterator it = coll.iterator();
