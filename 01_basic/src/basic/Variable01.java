@@ -24,7 +24,7 @@ public class Variable01 {
 		
 		//3.정수형
 		//byte(1byte, 8bit, -128 ~ +127) 
-		byte d = 0; //지역(local)변수는 garbage값을 가지고 있기때문에 초기화를 시켜야한다
+		byte d = 0;
 		//d = 128; //error
 		//d=127;
 		System.out.println("d = " + d);

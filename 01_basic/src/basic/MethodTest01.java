@@ -4,7 +4,7 @@ public class MethodTest01 {
 
 	public static void main(String[] args) {
 		//25, 36중 큰값을 구하시오
-		//자바의 기본(default, 자바도 알고 있는) 패키지 => java.lang
+		//자바의 기본(default, 자바도 알고 있는)패키지 => java.lang
 		int big = Math.max(25, 36); //java.lang패키지안의 Math클래스에서 max라는 메소드를 호출한다
 		System.out.println("최대값은? "+big);
 		
