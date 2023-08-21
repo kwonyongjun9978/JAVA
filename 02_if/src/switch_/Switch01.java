@@ -8,7 +8,7 @@ public class Switch01 {
 		Scanner scan = new Scanner(System.in);
 		int days;
 		
-		System.out.println("월 입력 : ");
+		System.out.print("월 입력 : ");
 		int month = scan.nextInt();
 		
 		switch(month) {

@@ -6,11 +6,11 @@ public class Switch02 {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		System.err.print("a의 값 : ");
+		System.out.print("a의 값 : ");
 		int a = sc.nextInt();
-		System.err.print("b의 값 : ");
+		System.out.print("b의 값 : ");
 		int b = sc.nextInt();
-		System.err.print("연산자(+,-,*,/)를 입력 : ");
+		System.out.print("연산자(+,-,*,/)를 입력 : ");
 		String op = sc.next();
 		
 		switch(op) {

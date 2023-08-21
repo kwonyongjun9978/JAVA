@@ -3,12 +3,12 @@ package operator;
 public class Comp {
 
 	public static void main(String[] args) {
-		/*
+		
 		char ch0 = 'B';
 		System.out.println(Character.toLowerCase(ch0));
-		//char ch = 'e';
-		//System.out.println(Character.toUpperCase(ch));
-		*/
+		char ch1 = 'e';
+		System.out.println(Character.toUpperCase(ch1));
+		
 		
 		char ch = 'B';
         //char ch = 'E';   

@@ -12,27 +12,6 @@ public class If03 {
 		int b =scan.nextInt();
 		System.out.print("c의 값 : ");
 		int c =scan.nextInt();
-		
-		/*
-		if(a>b && b>c) {
-			System.out.println(c+"  "+b+"  "+a);
-		}
-		if(a>b && c>b && a>c) {
-			System.out.println(b+"  "+c+"  "+a);
-		}
-		if(b>a && a>c) {
-			System.out.println(c+"  "+a+"  "+b);
-		}
-		if(b>a && c>a && b>c) {
-			System.out.println(a+"  "+c+"  "+b);
-		}
-		if(c>a && a>b) {
-			System.out.println(b+"  "+a+"  "+c);
-		}
-		if(c>a && b>a && c>b) {
-			System.out.println(a+"  "+b+"  "+c);
-		}
-		*/
 
 		if(a<b && a<c) { //a가 가장 작은 경우
 			if(b<c) {
