@@ -53,9 +53,13 @@ public class Variable01 {
 		
 		//double(8byte, 64bit, default)
 		
-		
+		System.out.println(Byte.MAX_VALUE + "," + Byte.MAX_VALUE);
 		System.out.println(Integer.MIN_VALUE + "," + Integer.MAX_VALUE); //MAX_VALUE : 상수(정해진값)
 		System.out.println(Long.MIN_VALUE + "," + Long.MAX_VALUE);
+		System.out.println(Float.MIN_VALUE + "," + Float.MAX_VALUE);
+		System.out.println(Double.MIN_VALUE + "," + Double.MAX_VALUE);
 	}
 
 }
+
+//long과 float 타입 변수값 뒤에 l(L)과 f(F)를 붙이는 이유는 해당 값이 어떤 데이터 타입을 나타내는지 명시적으로 지정하기 위한 것입니다.

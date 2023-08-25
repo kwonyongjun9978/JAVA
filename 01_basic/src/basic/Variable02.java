@@ -5,10 +5,10 @@ class Test{
 	static int b = 20;
 	static String str;
 }
-//Variable02.java파일 1개를 컬파일하면 class파일이 2개 생긴다(Test.class,Variable02.class)
+//Variable02.java파일 1개를 컬파일하면 class파일이 2개 생긴다(Test.class, Variable02.class)
 
 public class Variable02 {
-	int a; //전역변수(필드, 0값으로 초기화가 되어있다, 범위 : class)
+	int a; //전역변수(클래스 변수, 인스턴스 변수)(필드, 0값으로 초기화가 되어있다, 범위 : class)
 	double b; 
 	static int c; //실행하자마자 메모리에 잡힌다, 인스턴스화 필요없음
 	
@@ -28,6 +28,7 @@ public class Variable02 {
 		
 		//Test클래스의 값을 출력하시오
 		Test t = new Test();
+		System.out.println(t);
 		System.out.println("Test클래스의 필드 a = "+t.a);
 		System.out.println("Test클래스의 static 필드 b = "+Test.b);
 		System.out.println("Test클래스의 static 필드 str = "+Test.str); //String 타입의 초기화값 : null

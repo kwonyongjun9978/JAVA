@@ -14,9 +14,9 @@ public class Calc {
 		*/
 		int a = 320; 
 		int b = 258;
-		int sum = (a+b);
-		int sub = (a-b);
-		int mul = (a*b);
+		int sum = a+b;
+		int sub = a-b;
+		int mul = a*b;
 		double div = ((double)a/b);
 		
 		System.out.println(a+" + "+b+" = "+sum);
@@ -32,12 +32,12 @@ public class Calc {
 		/*
 		//print vs println vs printf
 		int num = 9978;
-		System.out.print("print ! " + num + "\n");	//print   : 괄호안 내용을 단순히 출력. 개행문자(\n) 포함X.
-											//		    형식(int, float, double 등)에 구애받지 않는 문자를 그대로 출력하고 싶을 때 사용한다.			
+		System.out.print("print ! " + num + "\n");	//print : 괄호안 내용을 단순히 출력. 개행문자(\n) 포함X.
+											//		    	  형식(int, float, double 등)에 구애받지 않는 문자를 그대로 출력하고 싶을 때 사용한다.			
 		System.out.println("println ! " + num);		//println : 괄호안 내용을 출력한 후 마지막에 개행문자가 포함되어 있어 출력후 한 줄 띄워짐.
-											//          print와 동일하게 형식(int, float, double 등)에 구애받지 않는 문자를 그대로 출력하고 싶을 때 사용한다.
-		System.out.printf("printf ! %d \n", num);	//printf  : C에서의 printf와 동일. %d, %s 등을 쓰기위해 사용. 개행문자 포함X
-											//          형식을 신경써야할 때 사용(int, long, float, double 등)
+											//          		print와 동일하게 형식(int, float, double 등)에 구애받지 않는 문자를 그대로 출력하고 싶을 때 사용한다.
+		System.out.printf("printf ! %d \n", num);	//printf  : C언어 에서의 printf와 동일. %d, %s 등을 쓰기위해 사용. 개행문자 포함X
+											//          		형식을 신경써야할 때 사용(int, long, float, double 등)
 		*/
 		
 		/*

@@ -8,9 +8,8 @@ public class Operator04 {
 		
 		result = ((num1+=10)<0 && (num2+=10)>0);
 		System.out.println("result = "+result);
-		System.out.println("num1 = "+num1+" num2 =  "+num2);
+		System.out.println("num1 = "+num1+" num2 = "+num2);
 		// &&,|| :  (num1+=10)<0 연산 결과가 False이므로 앞 연산만 진행후 종료
 		// &,| : (num1+=10)<0 연산 결과가 False여도 뒤에까지 연산한후 종료 
 	}
-
 }

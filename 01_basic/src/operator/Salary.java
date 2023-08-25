@@ -39,7 +39,7 @@ public class Salary {
 		System.out.println("¿ù±Þ : "+df.format(c)+"¿ø");
 		
 		/*
-		1234
+		12345
 		#,###.## = 12,345
 		#,##0.00 = 12,345.00
 		*/
