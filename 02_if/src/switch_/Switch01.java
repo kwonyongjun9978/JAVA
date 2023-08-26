@@ -11,7 +11,7 @@ public class Switch01 {
 		System.out.print("월 입력 : ");
 		int month = scan.nextInt();
 		
-		switch(month) {
+		switch(month) { //실수형 타입은 쓸 수 없다
 		case 2 : days=28; break;
 		case 1 : days=31; 
 		case 3 : days=31; 

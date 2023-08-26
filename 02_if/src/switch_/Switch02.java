@@ -17,7 +17,7 @@ public class Switch02 {
 		case "+" : System.out.println(a+" +" +b+" = "+(a+b)); break; 
 		case "-" : System.out.println(a+" - "+b+" = "+(a-b)); break; 
 		case "*" : System.out.println(a+" * "+b+" = "+(a*b)); break; 
-		case "/" : System.out.println(a+" / "+b+" = "+((double)a/b));; break; 
+		case "/" : System.out.println(a+" / "+b+" = "+((double)a/b)); break; 
 		}
 		
 	}
