@@ -17,8 +17,5 @@ public class Array02 {
 		for(String data : ar) {
 			System.out.println(data);
 		}
-		
-
 	}
-
 }
