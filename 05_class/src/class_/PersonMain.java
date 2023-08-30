@@ -47,13 +47,13 @@ public class PersonMain {
 		Person b = new Person();
 		System.out.println("객체 b = "+b);
 		
-		b.setName("송섹근"); 
-		b.setAge(25); 
+		b.setName("문건영"); 
+		b.setAge(33); 
 		System.out.println("이름 = "+b.getName()+"  나이 = "+b.getAge());
 		
 		Person c = new Person();
 		System.out.println("객체 c = "+c);
-		c.setData("둘리", 100); 
+		c.setData("", 100); 
 		System.out.println("이름 = "+c.getName()+"  나이 = "+c.getAge());
 		
 		Person d = new Person();
