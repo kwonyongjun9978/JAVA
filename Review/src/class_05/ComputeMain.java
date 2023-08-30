@@ -1,4 +1,4 @@
-package class_;
+package class_05;
 
 import java.util.Scanner;
 
@@ -8,7 +8,7 @@ public class ComputeMain {
 		Scanner sc = new Scanner(System.in);
 		System.out.print("횟수 입력 : ");
 		int co = sc.nextInt();
-		Compute[] ar = new Compute[co]; //객체 배열(인덱스 마다 참조하는 주소값이 다르다)
+		Compute[] ar = new Compute[co];
 		for(int i=0; i<co; i++) {
 			System.out.println("["+(i+1)+"]번째");
 			System.out.print("x 입력 : ");
@@ -16,9 +16,8 @@ public class ComputeMain {
 			System.out.print("y 입력 : ");
 			int y = sc.nextInt();
 			
-			//class생성
-			ar[i]=new Compute();
-			ar[i].setData(x, y);
+			ar[i] = new Compute();
+			ar[i].setData(x,y);
 			ar[i].calc();
 		}
 		System.out.println("x\ty\tsum\tsub\tmul\tdiv");
@@ -26,11 +25,12 @@ public class ComputeMain {
 			System.out.println(ar[i].getX()+"\t"+
 					ar[i].getY()+"\t"+ar[i].getSum()+"\t"+
 					ar[i].getSub()+"\t"+ar[i].getMul()+"\t"+
-					ar[i].getDiv());
-			}	
-	}
-}
+					ar[i].getDiv()+"\t"+ar[i]);
+		}
 
+	}
+
+}
 /*
 [문제] 사칙연산
 x, y를 입력하여 합, 차, 곱, 몫을 구하시오
