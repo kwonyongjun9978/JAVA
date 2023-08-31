@@ -37,7 +37,7 @@ public class FruitMain {
 		Fruit[] ar = {new Fruit("사과", 100, 80, 75), 
 					  new Fruit("포도", 30, 25, 10),
 					  new Fruit("딸기", 25, 30, 90)};
-		for(Fruit data :ar) {
+		for(Fruit data : ar) {
 			data.calcTot();
 			data.display();
 		}

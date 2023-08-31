@@ -30,7 +30,6 @@ public class VarArgs {
 		System.out.println("гу = "+va.sum(10,20,30,40));
 
 	}
-
 }
 
 /*

@@ -26,7 +26,7 @@ public class StringBufferMain {
 			buffer.append("=");
 			buffer.append(dan*i);
 			System.out.println(buffer.toString()); //StringBuffer -> String 변환
-			
+			//System.out.println(buffer.length());
 			//StringBuffer는 값이 사라지지 않고 보관됨
 			// 2*1=2 2*2=4 2*3=6 2*4=8 2*5=10 2*6=12 2*7=14 2*8=16 2*9=18 -> delete() 필요
 			buffer.delete(0,buffer.length());
