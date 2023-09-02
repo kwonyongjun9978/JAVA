@@ -15,7 +15,7 @@ public class Token {
 		} //while
 		System.out.println("--------------------------");
 		
-		String[] ar= str.split(","); //비어있는 값도 가져온다 
+		String[] ar = str.split(","); //비어있는 값도 가져온다 
 		
 		for(String data : ar) {
 			System.out.println(data);
