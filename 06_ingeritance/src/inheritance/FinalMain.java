@@ -18,6 +18,7 @@ class Final{
 	//static(실행하자마자 메모리에 자동으로 생성이 된다->new X)
 	public static final String ANIMAL = "기린";
 	
+	//static final 필드는 static 구역에서 초기값을 주어야 한다
 	//static인 경우 생성자에서 초기화가 안된다(생성자는 new해야 하기 때문)
 	public static final String ANIMAL2;
 	static {
@@ -48,6 +49,8 @@ public class FinalMain {
 		
 		Final f = new Final();
 		System.out.println("FRUIT = "+f.FRUIT);
+		
+		System.out.println("FRUIT2 = "+f.FRUIT2);
 		
 		System.out.println("ANIMAL = "+Final.ANIMAL);
 		

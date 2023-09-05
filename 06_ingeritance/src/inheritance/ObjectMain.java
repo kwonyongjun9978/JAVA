@@ -7,6 +7,7 @@ class Test extends Object {
 class Sample extends Object{
 	@Override
 	public String toString() {
+		//return super.toString();
 		return getClass()+"@용준"; //getClass() : 객체가 어떤 클래스로 생성되어있는지에 대한 정보를 반환한다.
 	}
 }
@@ -17,7 +18,7 @@ class Exam extends Object{
 	
 	@Override
 	public String toString() {
-//		return super.toString();
+		//return super.toString();
 		return name + "\t" + age;
 	}
 }

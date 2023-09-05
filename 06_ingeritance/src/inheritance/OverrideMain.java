@@ -2,15 +2,24 @@ package inheritance;
 
 class AA{
 	public int a =3;
+	
+	AA(){
+		System.out.println("부모클래스의 기본 생성자");
+	}
+	
 	public void disp() {
 		this.a += 5;
 		System.out.println("AA : "+ a + " ");
 	}
 }
-//-----------------
+
 class BB extends AA{
 	//필드는 Override 개념이 없다, 메소드에만 해당한다
 	public int a =8;
+	
+	BB(){
+		System.out.println("자식클래스의 기본 생성자");
+	}
 	
 	@Override
 	public void disp() {
@@ -23,14 +32,14 @@ class BB extends AA{
 public class OverrideMain {
 
 	public static void main(String[] args) {
-		BB aa = new BB(); //AA클래스와 BB클래스 메소드(private제외),필드(private제외) 모두 사용 가능
+		BB aa = new BB(); //AA클래스와 BB클래스 메소드,필드 모두 사용 가능(AA클래스의 메소드,필드 private제외)
 		aa.disp(); //BB : 13, 오버라이딩된 자식 메소드 호출
 		System.out.println("aa : "+aa.a); 
 		System.out.println();
 		
 		/*업캐스팅(부모 = 자식)
 		부모 클래스 변수를 가지고 자식 클래스의 객체를 참조하는 경우에는 부모 클래스에서 정의된 부분만 사용할 수 있다.
-		자식 클래스(BB) 중에서 부모 클래스(AA)로부터 상속받은 부분(disp())만을 bb를 통해서 사용할 수 있고 나머지는 사용하지 못한다.
+		자식 클래스(BB) 중에서 부모 클래스(AA)로부터 상속받은 부분(disp())만을 bb를 통해서 사용할 수 있고 나머지는 사용하지 못한다.(부모 클래스(AA)의 메소드 필드 사용)
 		 */
 		AA bb = new BB();   
 		bb.disp(); //BB : 13

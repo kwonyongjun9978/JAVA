@@ -12,7 +12,6 @@ public class Safari extends Zoo{
 		//z.elephant();
 		//z.lion();
 		
-		//자식클래스로 생성해야 내 위에 부모가 있는게 보인다, but부모 클래스로 생성하면 부모입장에서 내 밑에 있는게 안보인다.
 		Safari s = new Safari();
 		s.tiger();
 		s.giraffe();

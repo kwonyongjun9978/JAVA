@@ -20,6 +20,10 @@ public class SubMain extends Super{
 		System.out.println("이름 = "+name);
 		System.out.println("나이 = "+age);
 		super.disp(); //this.disp();
+		/*
+		super.disp() : 항상 부모 클래스의 disp() 메서드를 호출하며, 부모 클래스의 구현을 사용합니다.
+		this.disp() : 현재 클래스에서 오버라이딩한 경우에는 자식 클래스의 disp() 메서드를 호출하고, 그렇지 않으면 부모 클래스의 disp() 메서드를 호출합니다.
+		*/
 	}
 
 	public static void main(String[] args) {

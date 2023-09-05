@@ -13,7 +13,6 @@ public class ChildMain extends Super {
 //		super.height = height;
 		this.name = name;
 		this.age = age;
-
 	}
 	
 	public void disp() {
@@ -21,6 +20,7 @@ public class ChildMain extends Super {
 		System.out.println("나이 = "+age);
 		super.disp(); 
 	}
+	
 	public static void main(String[] args) {
 		//Sub class로 객체를 생성하면 Super class와 자신의 생성자를 모두 호출한다.
 		ChildMain aa = new ChildMain("홍길동", 25, 73.5, 182.6);
