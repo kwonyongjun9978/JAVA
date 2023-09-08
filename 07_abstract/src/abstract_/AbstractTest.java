@@ -19,8 +19,7 @@ public abstract class AbstractTest { //POJO(Plain Old Java Object) - 기본적인 형
 	}
 
 	public abstract void setName(String name); //추상메소드
-											   
-	
+											   	
 }
 /*
 추상메소드를 만들면 추상클래스로 정의되어야 한다.
@@ -29,5 +28,6 @@ public abstract class AbstractTest { //POJO(Plain Old Java Object) - 기본적인 형
 추상클레스는 직접적으로(자신의 클래스로) 메모리에 생성(new)할수 없다(추상 클래스로 객체생성X)
 =>생성하려면
 	     가. Sub Class를 이용(반드시 Sub Class가 추상메소드를 Override 해야 한다)
+	     
 	     나. 메소드를 이용
 */
