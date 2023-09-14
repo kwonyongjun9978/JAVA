@@ -16,7 +16,7 @@ public class AbstractMain {
 		//다.
 		AbstractTest at = new AbstractTest() { //익명 내부 클래스를 이용하여 추상클래스를 다른 클래스에서 메모리 생성(인스턴스화, 객체생성)
 			
-			public void setName(String name) { //자식 클래스가 아닌데 꼭 오버라이드를 해줘야 하나? -> 가능
+			public void setName(String name) { //자식 클래스가 아닌데 꼭 오버라이드를 해줘야 하나? -> Yes
 				this.name = name;
 			}
 		};

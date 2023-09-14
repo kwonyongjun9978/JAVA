@@ -25,7 +25,7 @@ public class SungJukSort implements SungJuk {
 	        
 	        Comparator<SungJukDTO> com = null;
 	        if(num == 1) {
-	        	 com = new Comparator<SungJukDTO>() {
+	        	 com = new Comparator<SungJukDTO>() { //익명 내부 클래스
 	        		@Override
 	        		public int compare(SungJukDTO s1, SungJukDTO s2) {
 	        			//총점으로 내림차순
@@ -37,7 +37,7 @@ public class SungJukSort implements SungJuk {
 	        	};
 	        	
 	        }else if(num == 2) {
-	        	com = new Comparator<SungJukDTO>() {
+	        	com = new Comparator<SungJukDTO>() { //익명 내부 클래스
 	        		@Override
 	        		public int compare(SungJukDTO s1, SungJukDTO s2) {
 	        			//이름으로 오름차순
