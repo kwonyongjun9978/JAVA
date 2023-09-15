@@ -1,6 +1,9 @@
 package collection;
 
 import java.util.LinkedList;
+import java.util.PriorityQueue;
+import java.util.Queue;
+
 import static java.lang.System.out;
 
 public class QueueMain {
@@ -8,7 +11,8 @@ public class QueueMain {
 	public static void main(String[] args) {
 		String [] item = {"포르쉐", "페라리", "벤틀리"};
 		
-		LinkedList<String> q = new LinkedList<String>();
+		//LinkedList<String> q = new LinkedList<String>();
+		Queue<String> q = new PriorityQueue<String>();
 		
 		for(String n : item) {
 			q.offer(n); //offer() : 요소 추가
