@@ -11,10 +11,10 @@ public class SungJukDelete implements SungJuk {
 		System.out.println();
 		Scanner sc = new Scanner(System.in);
 		
-		System.out.println("삭제 할 이름 입력 : ");
+		System.out.print("삭제 할 이름 입력 : ");
 		String name = sc.next();
 		
-		int count=0;
+		int count = 0;
 		Iterator<SungJukDTO> it = arrayList.iterator();
 		while(it.hasNext()) {
 			SungJukDTO sungJukDTO = it.next();
@@ -24,11 +24,13 @@ public class SungJukDelete implements SungJuk {
 				count++;
 			}
 		}
+		
 		if(count == 0) {
 			System.out.println("회원의 정보가 없습니다");
 		}else {
 			System.out.println(count+"건을 삭제하였습니다");
 		}
+
 	}
 
 }

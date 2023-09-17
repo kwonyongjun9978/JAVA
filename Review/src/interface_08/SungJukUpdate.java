@@ -13,7 +13,7 @@ public class SungJukUpdate implements SungJuk {
 		System.out.print("번호 입력 : ");
 		int no = sc.nextInt();
 		
-		int sw=0;
+		int sw = 0;
 		for(SungJukDTO sungJukDTO : arrayList) {
 			if(sungJukDTO.getNo() == no) {
 				sw = 1;
