@@ -28,7 +28,8 @@ public class ExceptionMain2 {
 			try {
 				throw new Exception("y는 0보다 크거나 같아야 한다.");
 			}catch(Exception e) {
-				e.printStackTrace();
+				System.out.println(e.getMessage());
+				//e.printStackTrace();
 			}
 		}
 	}
