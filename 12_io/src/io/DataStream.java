@@ -11,6 +11,9 @@ public class DataStream {
 
 	public static void main(String[] args) {
 		try {
+			/*
+			DataOutputStream / DataOutputStream은 int, float 와 같은 기본형 단위(primitive type)로 데이터를 처리하는 보조 스트림이다.
+			 */
 			//파일 출력
 			DataOutputStream dos = new DataOutputStream(new FileOutputStream("result.txt"));
 			
@@ -31,16 +34,16 @@ public class DataStream {
 			int age = dis.readInt();
 			double height = dis.readDouble();
 			
+			
 			System.out.println("이름 = "+name);
 			System.out.println("나이 = "+age);
-			System.out.println("키 = "+height);
-			
-//		} catch(FileNotFoundException e){
-//			e.printStackTrace();
-		}//try
+			System.out.println("키 = "+height);	
+		} catch(FileNotFoundException e){
+			e.printStackTrace();
+		}
 		catch(IOException e) {
 			e.printStackTrace();
-		}//catch
-	}//method
-}//class
+		}
+	}
+}
 

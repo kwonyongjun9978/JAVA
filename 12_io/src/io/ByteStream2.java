@@ -17,9 +17,7 @@ public class ByteStream2 {
 			bis.read(b, 0, size);
 			bis.close();
 			System.out.println(new String(b)); //byte[] -> String º¯È¯
-			
-		} catch (IOException e) {
-			
+		} catch (IOException e) {		
 			e.printStackTrace();
 		}
 
